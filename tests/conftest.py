@@ -3,16 +3,18 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
+from browser.browser import Browser
+
 
 @pytest.fixture()
-def driver():
+def browser():
     url = "https://store.steampowered.com/"
     options = webdriver.ChromeOptions()
-    driver = webdriver.Chrome(options=options, service=ChromeService(ChromeDriverManager().install()))
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
 
-    driver.get(url)
-    driver.maximize_window()
+    browser = Browser(driver)
+    browser.get(url)
 
-    yield driver
+    yield browser
 
-    driver.quit()
+    browser.quit()
