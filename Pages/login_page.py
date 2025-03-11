@@ -7,34 +7,37 @@ from pages.base_page import BasePage
 
 
 class LoginPage(BasePage):
-    def __init__(self, browser):
-        locators = {
-            "sign_in_header": "//div[contains(@style, 'display: flex')]//div",
-            "login_input": "(//input[@type='text'])[1]",
-            "password_input": "//input[@type='password']",
-            "authorize_button": "//button[@type='submit']",
-            "authorize_loader": "(//button[@type='submit' and @disabled]//div)[1]",
-            "error_login_text": "(//form)//div[5][1]"
-        }
-        super().__init__(browser, locators)
+    UNIQUE_ELEMENT_LOC = "//div[contains(@style, 'display: flex')]//div"
 
-        self.sing_in_label = Label(self.browser, self.locators.sign_in_header)
-        self.login_input = Input(self.browser, self.locators.login_input)
-        self.password_input = Input(self.browser, self.locators.password_input)
-        self.authorize_button = Button(self.browser, self.locators.authorize_button)
-        self.authorize_loader = WebElement(self.browser, self.locators.authorize_loader)
-        self.error_login_text = WebElement(self.browser, self.locators.error_login_text)
+    SIGN_IN_HEADER = "//div[contains(@style, 'display: flex')]//div"
+    LOGIN_INPUT = "(//input[@type='text'])[1]"
+    PASSWORD_INPUT = "//input[@type='password']"
+    AUTHORIZE_BUTTON = "//button[@type='submit']"
+    AUTHORIZE_LOADER = "(//button[@type='submit' and @disabled]//div)[1]",
+    ERROR_LOGIN_TEXT = "(//form)//div[5][1]"
+
+    def __init__(self, browser):
+        super().__init__(browser)
+        self.page_name = "Login page"
+        self.unique_element = Label(self.browser, self.UNIQUE_ELEMENT_LOC)
+
+        self.sing_in_label = Label(self.browser, self.SIGN_IN_HEADER)
+        self.login_input = Input(self.browser, self.LOGIN_INPUT)
+        self.password_input = Input(self.browser, self.PASSWORD_INPUT)
+        self.authorize_button = Button(self.browser, self.AUTHORIZE_BUTTON)
+        self.authorize_loader = WebElement(self.browser, self.AUTHORIZE_LOADER)
+        self.error_login_text = WebElement(self.browser, self.ERROR_LOGIN_TEXT)
 
     def authorize(self):
         self.login_input.send_keys(DataGenerator.get_random_username())
         self.password_input.send_keys(DataGenerator.get_random_password())
         self.authorize_button.click()
 
-    def sing_in_label_is_exist(self):
+    def is_exist_sing_in_label(self):
         return self.sing_in_label.is_exists()
 
-    def authorize_loader_is_exist(self):
+    def is_exist_authorize_loader(self):
         return self.authorize_loader.is_exists()
 
-    def error_login_text_is_exist(self):
-        return self.error_login_text.is_exists()
+    def is_visible_error_login_text(self):
+        return self.error_login_text.is_visible()

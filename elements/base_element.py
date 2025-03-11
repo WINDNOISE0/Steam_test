@@ -72,6 +72,13 @@ class BaseElement:
         except TimeoutException:
             return False
 
+    def is_visible(self):
+        try:
+            self.wait_for_visible()
+            return True
+        except TimeoutException:
+            return False
+
     def click(self) -> None:
         element = self.wait_for_clickable()
         Logger.info(f"{self}: click")
