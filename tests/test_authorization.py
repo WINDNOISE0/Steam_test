@@ -2,8 +2,8 @@ from pages.login_page import LoginPage
 from pages.main_page import MainPage
 
 
-class TestSteam:
-    def test_authorization(self, browser):
+class TestAuthorization:
+    def test_simple_authorization(self, browser):
         main_page = MainPage(browser)
         login_page = LoginPage(browser)
 

@@ -109,6 +109,10 @@ class Browser:
         Logger.info(f"{self}: switch to frame")
         return self._driver.switch_to.frame(frame.wait_for_presence())
 
+    def get_page_source(self):
+        Logger.info(f"{self}: get page source")
+        return self._driver.page_source
+
     def __str__(self) -> str:
         return f"{self.__class__.__name__}[{self._driver.session_id}]"
 

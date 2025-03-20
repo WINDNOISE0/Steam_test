@@ -1,2 +1,2 @@
-class Settngs_:
+class TestConfig:
     URL = "https://store.steampowered.com/"

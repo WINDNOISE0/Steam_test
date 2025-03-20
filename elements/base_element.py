@@ -1,3 +1,4 @@
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.wait import WebDriverWait
@@ -64,6 +65,19 @@ class BaseElement:
 
     def wait_for_visible(self) -> WebElement:
         return self._wait_for(expected_condition=expected_conditions.visibility_of_element_located)
+
+    """Почему то падает TimeoutException
+    Не смог пофиксить =((
+    """
+    # def is_page_fully_loaded(self) -> bool:
+    #     return self.browser.execute_script("return document.readyState") == "complete"
+    #
+    # def is_load(self) -> bool:
+    #     try:
+    #         self._wait.until(method=lambda _: self.is_page_fully_loaded())
+    #         return True
+    #     except TimeoutException:
+    #         return False
 
     def is_exists(self):
         try:
