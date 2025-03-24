@@ -66,19 +66,6 @@ class BaseElement:
     def wait_for_visible(self) -> WebElement:
         return self._wait_for(expected_condition=expected_conditions.visibility_of_element_located)
 
-    """Почему то падает TimeoutException
-    Не смог пофиксить =((
-    """
-    # def is_page_fully_loaded(self) -> bool:
-    #     return self.browser.execute_script("return document.readyState") == "complete"
-    #
-    # def is_load(self) -> bool:
-    #     try:
-    #         self._wait.until(method=lambda _: self.is_page_fully_loaded())
-    #         return True
-    #     except TimeoutException:
-    #         return False
-
     def is_exists(self):
         try:
             self.wait_for_presence()
@@ -139,3 +126,8 @@ class BaseElement:
             raise
         Logger.info(f"{self}: attribute '{name}' = '{value}'")
         return value
+
+    @staticmethod
+    def get_digit_price(price: str) -> str:
+        clean_price = ''.join(char for char in price if char.isdigit() or char in [",", "."])
+        return clean_price.replace(",", ".")
