@@ -18,16 +18,9 @@ class MainPage(BasePage):
         self.page_name = "Main Page"
 
         self.login_button = Button(self.browser, self.LOGIN_BUTTON, description="Main page -> Login page")
-        self.find_input = Input(self.browser, self.FIND_INPUT, description="Main page -> Find Input | ")
+        self.find_input = Input(self.browser, self.FIND_INPUT, description="Main page -> Find Input")
         self.find_button = Button(self.browser, self.FIND_BUTTON, description="Main page -> Search page")
 
-
-    def is_opened(self):
-        try:
-            self.wait_for_open()
-            return True
-        except TimeoutException:
-            return False
 
     def login_start(self):
         self.login_button.click()

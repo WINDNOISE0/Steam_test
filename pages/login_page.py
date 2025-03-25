@@ -2,7 +2,6 @@ from elements.button import Button
 from elements.input import Input
 from elements.label import Label
 from elements.web_element import WebElement
-from helpers.data_generator import DataGenerator
 from pages.base_page import BasePage
 
 
@@ -28,15 +27,15 @@ class LoginPage(BasePage):
         self.authorize_loader = WebElement(self.browser, self.AUTHORIZE_LOADER)
         self.error_login_text = WebElement(self.browser, self.ERROR_LOGIN_TEXT)
 
-    def authorize(self):
-        self.login_input.send_keys(DataGenerator.get_random_username())
-        self.password_input.send_keys(DataGenerator.get_random_password())
+    def authorize(self, login, password):
+        self.login_input.send_keys(login)
+        self.password_input.send_keys(password)
         self.authorize_button.click()
 
-    def is_exist_sing_in_label(self):
+    def is_exists_sing_in_label(self):
         return self.sing_in_label.is_exists()
 
-    def is_exist_authorize_loader(self):
+    def is_exists_authorize_loader(self):
         return self.authorize_loader.is_exists()
 
     def is_visible_error_login_text(self):
