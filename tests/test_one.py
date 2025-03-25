@@ -1,4 +1,4 @@
-from singeltone_driver.singelton_driver import SingeltoneDriver
+from singeltone_driver.singleton_driver import SingletonDriver
 
 
 class TestOne:
@@ -10,7 +10,6 @@ class TestOne:
 
     def test_three(self, driver):
         assert 1 == 1
-        SingeltoneDriver().quit_driver()
 
     def test_four(self, driver):
         assert 1 == 1

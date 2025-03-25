@@ -1,12 +1,10 @@
 import pytest
-
-
-from singeltone_driver.singelton_driver import SingeltoneDriver
+from singeltone_driver.singleton_driver import SingletonDriver
 
 
 @pytest.fixture()
 def driver():
-    driver = SingeltoneDriver().get_driver()
-    print(id(driver))
+    driver = SingletonDriver()
     yield driver
 
+    driver.quit()
