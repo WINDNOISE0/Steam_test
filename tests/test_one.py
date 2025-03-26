@@ -1,5 +1,3 @@
-from singeltone_driver.singleton_driver import SingletonDriver
-
 
 class TestOne:
     def test_one(self, driver):

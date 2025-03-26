@@ -7,4 +7,4 @@ def driver():
     driver = SingletonDriver()
     yield driver
 
-    driver.quit()
+    SingletonDriver.quit_driver()

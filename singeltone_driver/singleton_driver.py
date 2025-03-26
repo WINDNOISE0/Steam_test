@@ -15,7 +15,7 @@ class SingletonDriver:
         return cls._instance
 
     @classmethod
-    def quit(cls):
+    def quit_driver(cls):
         if cls._instance:
             cls._instance.quit()
             cls._instance = None
