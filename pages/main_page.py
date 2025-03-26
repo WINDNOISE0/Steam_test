@@ -9,8 +9,8 @@ from pages.base_page import BasePage
 class MainPage(BasePage):
     UNIQUE_ELEMENT_LOC = "//span[@id='logo_holder']//img[@src]"
     LOGIN_BUTTON = "(//*[@id='global_actions']//a)[2]"
-    FIND_INPUT = "//input[@id='store_nav_search_term']"
-    FIND_BUTTON = "//a[@id='store_search_link']"
+    FIND_INPUT = "store_nav_search_term"
+    FIND_BUTTON = "store_search_link"
 
     def __init__(self, browser):
         super().__init__(browser)

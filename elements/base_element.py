@@ -113,7 +113,7 @@ class BaseElement:
         except WebDriverException as err:
             Logger.error(f"{self}: {err}")
             raise
-        Logger.info(f"{self}: attribute '{name}' = '{value}'")
+        Logger.info(f"{self}: attribute '{name}' = '{value[:20].strip()}...'")
         return value
 
     def get_css_property(self, name: str) -> str:
@@ -127,7 +127,3 @@ class BaseElement:
         Logger.info(f"{self}: attribute '{name}' = '{value}'")
         return value
 
-    @staticmethod
-    def get_digit_price(price: str) -> str:
-        clean_price = ''.join(char for char in price if char.isdigit() or char in [",", "."])
-        return clean_price.replace(",", ".")

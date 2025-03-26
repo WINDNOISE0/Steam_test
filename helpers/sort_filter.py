@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import StrEnum
 
 
-class SortFilter(str, Enum):
+class SortFilter(StrEnum):
     RELEVANCE = "relevance"
     RELEASE_DATA = "release_data"
     NAME = "name"

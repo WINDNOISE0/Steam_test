@@ -1,55 +1,66 @@
+import time
+
+from bs4 import BeautifulSoup
 from seleniumbase.common.exceptions import TimeoutException
-import re
 
 from elements.button import Button
-from elements.multy_element import MultyElement
 from elements.web_element import WebElement
+from helpers.helper_tools import HelperTools
 from helpers.sort_filter import SortFilter
 from logger.logger import Logger
 from pages.base_page import BasePage
 
 
 class SearchPage(BasePage):
-    UNIQUE_ELEMENT_LOC = "//a[@id='sort_by_trigger']"
+    UNIQUE_ELEMENT_LOC = "sort_by_trigger"
+    SORT_DROPDOWN = "sort_by_trigger"
+    DATA_PANEL = "search_resultsRows"
 
-    SORT_DROPDOWN = "//a[@id='sort_by_trigger']"
-    DATA_PANEL = "//div[@id='search_resultsRows']"
     SORT_ITEM = {
-        "relevance": "//a[@id='_ASC']",
-        "release_data": "//a[@id='Released_DESC']",
-        "name": "//a[@id='Name_ASC']",
-        "price_desc": "//a[@id='Price_ASC']",
-        "price_asc": "//a[@id='Price_DESC']",
-        "user_reviews": "//a[@id='Reviews_DESC']",
+        "relevance": "_ASC",
+        "release_data": "Released_DESC",
+        "name": "Name_ASC",
+        "price_desc": "Price_ASC",
+        "price_asc": "Price_DESC",
+        "user_reviews": "Reviews_DESC",
     }
 
-    CONTAINER_ITEM = "//div[@id='search_resultsRows']"
-    PRICE_CONTAINER_TEG = "//div[@class='discount_final_price']"
+    PRICE_CONTAINER_TEG = ".discount_final_price"
 
     def __init__(self, browser):
         super().__init__(browser)
+
+
         self.unique_element = WebElement(self.browser, self.UNIQUE_ELEMENT_LOC,
                                          description="SearchPage -> Filter Dropdown U")
-
         self.sort_buttons = {
             filter_type: Button(browser, locator)
             for filter_type, locator in self.SORT_ITEM.items()
         }
 
         self.sort_dropdown = WebElement(self.browser, self.SORT_DROPDOWN, description="SearchPage -> Filter Dropdown")
-        self.data_panel = MultyElement(self.browser, self.DATA_PANEL, self.CONTAINER_ITEM, self.PRICE_CONTAINER_TEG,
-                                       description="SearchPage -> Data panel")
 
+
+        self.data_panel = WebElement(self.browser, self.DATA_PANEL, description="SearchPage -> Data panel")
 
     def select_filter(self, filter_type: SortFilter):
         self.sort_dropdown.click()
         filter_button = self.sort_buttons[filter_type]
         filter_button.click()
 
-    def is_sorted_product_list(self, price_count, reverse=False):
+    def get_price_list(self, price_count: int) -> list:
+        price_list = []
+
         try:
             self.is_loaded()
-            price_list = self.data_panel.get_price_list()[:price_count + 1]
-            return price_list == sorted(price_list, reverse=reverse)
+            soup = BeautifulSoup(self.data_panel.get_attribute("innerHTML"), "html.parser")
+            prices = soup.select(self.PRICE_CONTAINER_TEG)
+
+            for price_teg in prices[:price_count]:
+
+                price_list.append(HelperTools.get_digit_price(price_teg.text))
+
         except TimeoutException:
-            raise TimeoutException
+            Logger.error(f"{self} {self.DEFAULT_TIMEOUT} sec. is expired for waiting")
+
+        return price_list

@@ -4,7 +4,6 @@ from seleniumbase.common.exceptions import TimeoutException
 from browser.browser import Browser
 from logger.logger import Logger
 
-
 class BasePage:
     UNIQUE_ELEMENT_LOC = None
     DEFAULT_TIMEOUT = 10
@@ -21,13 +20,14 @@ class BasePage:
         Logger.info(f"{self}: wait for open")
         self.unique_element.wait_for_presence()
 
-    def wait_for_spa_loaded(self) -> None:
+    def wait_for_loaded(self) -> None:
         self._wait.until(lambda driver: self.browser.driver.execute_script("return document.readyState") == "complete")
+        Logger.info(f'{self.browser.driver.execute_script("return document.readyState") == "complete"}')
         self.wait_for_open()
 
     def is_loaded(self) -> bool:
         try:
-            self.wait_for_spa_loaded()
+            self.wait_for_loaded()
             return True
         except TimeoutException:
             return False
