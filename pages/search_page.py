@@ -14,7 +14,7 @@ from pages.base_page import BasePage
 class SearchPage(BasePage):
     UNIQUE_ELEMENT_LOC = "sort_by_trigger"
     SORT_DROPDOWN = "sort_by_trigger"
-    DATA_PANEL = "search_resultsRows"
+
 
     SORT_ITEM = {
         "relevance": "_ASC",
@@ -25,7 +25,8 @@ class SearchPage(BasePage):
         "user_reviews": "Reviews_DESC",
     }
 
-    PRICE_CONTAINER_TEG = ".discount_final_price"
+    DATA_PANEL = "//div[@id='search_resultsRows']"
+    PRICE_CONTAINER_TEG = "//div[@class='discount_final_price']"
 
     def __init__(self, browser):
         super().__init__(browser)
@@ -39,8 +40,6 @@ class SearchPage(BasePage):
         }
 
         self.sort_dropdown = WebElement(self.browser, self.SORT_DROPDOWN, description="SearchPage -> Filter Dropdown")
-
-
         self.data_panel = WebElement(self.browser, self.DATA_PANEL, description="SearchPage -> Data panel")
 
     def select_filter(self, filter_type: SortFilter):
