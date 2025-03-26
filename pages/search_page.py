@@ -10,7 +10,6 @@ from helpers.sort_filter import SortFilter
 from logger.logger import Logger
 from pages.base_page import BasePage
 
-
 class SearchPage(BasePage):
     UNIQUE_ELEMENT_LOC = "sort_by_trigger"
     SORT_DROPDOWN = "sort_by_trigger"
@@ -25,7 +24,7 @@ class SearchPage(BasePage):
         "user_reviews": "Reviews_DESC",
     }
 
-    DATA_PANEL = "//div[@id='search_resultsRows']"
+    DATA_PANEL = "search_resultsRows"
     PRICE_CONTAINER_TEG = "//div[@class='discount_final_price']"
 
     def __init__(self, browser):
@@ -39,8 +38,9 @@ class SearchPage(BasePage):
             for filter_type, locator in self.SORT_ITEM.items()
         }
 
-        self.sort_dropdown = WebElement(self.browser, self.SORT_DROPDOWN, description="SearchPage -> Filter Dropdown")
         self.data_panel = WebElement(self.browser, self.DATA_PANEL, description="SearchPage -> Data panel")
+        self.sort_dropdown = WebElement(self.browser, self.SORT_DROPDOWN, description="SearchPage -> Filter Dropdown")
+
 
     def select_filter(self, filter_type: SortFilter):
         self.sort_dropdown.click()
@@ -49,14 +49,13 @@ class SearchPage(BasePage):
 
     def get_price_list(self, price_count: int) -> list:
         price_list = []
-
         try:
             self.is_loaded()
+
             soup = BeautifulSoup(self.data_panel.get_attribute("innerHTML"), "html.parser")
-            prices = soup.select(self.PRICE_CONTAINER_TEG)
+            prices = soup.find_all(self.PRICE_CONTAINER_TEG)
 
             for price_teg in prices[:price_count]:
-
                 price_list.append(HelperTools.get_digit_price(price_teg.text))
 
         except TimeoutException:
