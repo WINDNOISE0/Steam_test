@@ -31,6 +31,17 @@ class Input(BaseElement):
             Logger.error(f"{self}: {err}")
             raise
 
+    def send_drag_drop_file_key(self,  keys: str,):
+        element = self.wait_for_presence()
+        Logger.info(f"{self}: send keys = '{keys}'")
+        try:
+            element.send_keys(keys)
+        except WebDriverException as err:
+            Logger.error(f"{self}: {err}")
+            raise
+
+
+
     def js_send_keys(self, keys: str, clear: bool = True) -> None:
         if clear:
             self.js_clear()

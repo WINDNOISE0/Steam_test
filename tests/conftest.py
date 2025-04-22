@@ -7,13 +7,12 @@ from browser.browser import Browser
 from test_config import TestConfig
 
 
-@pytest.fixture()
+@pytest.fixture(scope="class")
 def browser():
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
 
     browser = Browser(driver)
-    browser.get(TestConfig.URL)
 
     yield browser
 

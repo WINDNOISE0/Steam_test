@@ -1,2 +1,5 @@
 class TestConfig:
-    URL = "https://store.steampowered.com/"
+    HOST = "the-internet.herokuapp.com"
+    HOST_DEMOQA = "demoqa.com"
+    USERNAME = "admin"
+    PASSWORD = "admin"

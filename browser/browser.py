@@ -1,6 +1,7 @@
 import time
 
 from selenium.common import WebDriverException
+
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
@@ -66,7 +67,7 @@ class Browser:
             Logger.error(f"{self}: {err}")
             raise
 
-    def switch_to_window(self, title: str) -> None:
+    def switch_to_title_window(self, title: str) -> None:
         Logger.info(f"{self}: switch to window with title '{title}'")
         end_time = time.time() + self.PAGE_LOAD_TIMEOUT
 
@@ -84,13 +85,32 @@ class Browser:
                 Logger.error(f"{self}: window with title '{title}' wasn't found")
                 raise ValueError(f"{self}: window with title '{title}' wasn't found")
 
+    def switch_to_handle_window(self, handle_: str) -> None:
+        Logger.info(f"{self}: switch to window with handle '{handle_}'")
+        end_time = time.time() + self.PAGE_LOAD_TIMEOUT
+
+        while True:
+            handles = self._driver.window_handles
+            for handle in handles:
+                self._driver.switch_to.window(handle)
+                if self._driver.current_window_handle == handle_:
+                    Logger.info(f"{self}: new window handle = '{self._driver.current_window_handle}'")
+                    return
+
+            if time.time() < end_time:
+                time.sleep(1)  # try again in 1 second
+            else:
+                Logger.error(f"{self}: window with title '{handle_}' wasn't found")
+                raise ValueError(f"{self}: window with title '{handle_}' wasn't found")
+
     def wait_alert_present(self):
         Logger.info(f"{self}: wait alert present")
         return self._wait.until(expected_conditions.alert_is_present())
 
-    def switch_to_alert(self):
+    def switch_to_alert(self, wait=True):
         Logger.info(f"{self}: switch to alert")
-        self.wait_alert_present()
+        if wait:
+            self.wait_alert_present()
         return self._driver.switch_to.alert
 
     def get_alert_text(self):
@@ -109,9 +129,29 @@ class Browser:
         Logger.info(f"{self}: switch to frame")
         return self._driver.switch_to.frame(frame.wait_for_presence())
 
+    def switch_to_default_frame(self):
+        Logger.info(f"{self}: switch to default frame")
+        self._driver.switch_to.default_content()
+
     def get_page_source(self):
         Logger.info(f"{self}: get page source")
         return self._driver.page_source
+
+    def get_window_title(self):
+        Logger.info(f"{self}: get window title")
+        return self._driver.title
+
+    def get_id_current_handle(self) -> str:
+        Logger.info(f"{self}: get current handle id")
+        return self._driver.current_window_handle
+
+    def get_handle_id_list(self):
+        Logger.info(f"{self}: get handles id list")
+        return self._driver.window_handles
+
+    def scroll_down_page(self, count):
+        Logger.info(f"{self}: page scroll down")
+        self.execute_script(f"window.scrollBy(0, {count});")
 
     def __str__(self) -> str:
         return f"{self.__class__.__name__}[{self._driver.session_id}]"

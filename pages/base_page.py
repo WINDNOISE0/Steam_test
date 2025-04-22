@@ -22,15 +22,29 @@ class BasePage:
 
     def wait_for_loaded(self) -> None:
         self._wait.until(lambda driver: self.browser.driver.execute_script("return document.readyState") == "complete")
-        Logger.info(f'{self.browser.driver.execute_script("return document.readyState") == "complete"}')
         self.wait_for_open()
+
+    def wait_load_scroll_script(self):
+        self._wait.until(
+            lambda driver: driver.execute_script(
+                "return document.body.scrollHeight > window.innerHeight"
+            )
+        )
 
     def is_loaded(self) -> bool:
         try:
             self.wait_for_loaded()
+            self.unique_element.is_visible()
             return True
         except TimeoutException:
             return False
+
+    def open_page(self, url):
+        self.browser.get(url)
+
+    def get_current_link(self):
+        Logger.info(f"{self}: get current link")
+        return self.browser.driver.current_url
 
 
     def __str__(self) -> str:
