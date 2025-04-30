@@ -1,6 +1,6 @@
 import time
 
-from selenium.common import WebDriverException
+from selenium.common import WebDriverException, NoAlertPresentException
 
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions
@@ -113,8 +113,10 @@ class Browser:
             self.wait_alert_present()
         return self._driver.switch_to.alert
 
-    def get_alert_text(self):
+    def get_alert_text(self, wait=False):
         Logger.info(f"{self}: get alert text")
+        if wait:
+            self.wait_alert_present()
         return self.switch_to_alert().text
 
     def accept_alert(self):
@@ -149,9 +151,25 @@ class Browser:
         Logger.info(f"{self}: get handles id list")
         return self._driver.window_handles
 
-    def scroll_down_page(self, count):
+    def scroll_page_down(self):
         Logger.info(f"{self}: page scroll down")
-        self.execute_script(f"window.scrollBy(0, {count});")
+        self.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
+    def is_alert_closed(self):
+        try:
+            self.switch_to_alert(wait=False)
+            return False
+        except NoAlertPresentException:
+            return True
+
+    def get_current_link(self):
+        Logger.info(f"{self}: get current link")
+        return self.driver.current_url
+
+    @property
+    def handles_list(self):
+        Logger.info(f"{self}: get all browser window handles")
+        return self._driver.window_handles
 
     def __str__(self) -> str:
         return f"{self.__class__.__name__}[{self._driver.session_id}]"

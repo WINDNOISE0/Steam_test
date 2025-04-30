@@ -1,5 +1,13 @@
+import os
+from random import randint
+
+import faker
 import pytest
 
+from expected_results.expected_results import AlertPageExpectedRes, ContextPageExpectedRes, HoversPageExpectedRes, \
+    NewTabHandlersPageExpectedRes, NestedFramesPageExpectedRes, UploadPageExpectedRes
+from helpers import UrlUtils, RandomUtils, FileUtils
+from helpers.enpoints_urn import URN
 from helpers.js_button import JsButton
 from pages.dynamic_c_page import DynamicCPage
 from pages.frame_page import FramePage
@@ -21,8 +29,11 @@ class TestElements:
     ])
     def test_basic_auth(self, browser, username, password):
         authorize_page = AuthorizePage(browser)
+
+        browser.get(UrlUtils.create_url(URN.AUTHORIZE))
+
         authorize_page.authorize(username, password)
-        assert authorize_page.is_authorize_successful(), "Authorize not successful, header no visible"
+        assert authorize_page.is_loaded(), "Authorize not successful, header no visible"
 
     @pytest.mark.parametrize("button_name", [
         (JsButton.ALERT),
@@ -30,16 +41,23 @@ class TestElements:
         (JsButton.PROMPT),
     ])
     def test_click_alerts(self, browser, button_name):
-        alerts_page = AlertsPage(browser)
+        test_word = faker.Faker().word()
+
+        alerts_page = AlertsPage(browser, test_word)
+        browser.get(UrlUtils.create_url(URN.JS_ALERTS))
         assert alerts_page.is_loaded(), "No open alerts page"
 
         alerts_page.click_button(button_name)
-        assert alerts_page.is_alert_text_correctly(
-            button_name), f"Expected alert text: '{alerts_page.BUTTONS[button_name].alert_expected_text}' not matched actual text: '{alerts_page.alert_text}'"
+
+        expected = AlertPageExpectedRes(button_name, test_word)
+
+        assert expected.data.alert_expected_text == alerts_page.actual_alert_text, \
+            f"Expected alert text: '{expected.data.alert_expected_text}' not matched actual text: '{alerts_page.actual_alert_text}'"
 
         alerts_page.click_ok_alert_button()
-        assert alerts_page.is_result_text_correctly(
-            button_name), f"Expected result text: '{alerts_page.BUTTONS[button_name].result_expected_text}' not matched actual text: '{alerts_page.result_text}'"
+
+        assert expected.data.result_expected_text == alerts_page.actual_result_text, \
+            f"Expected alert text: '{expected.data.result_expected_text}' not matched actual text: '{alerts_page.actual_result_text}'"
 
     @pytest.mark.parametrize("button_name", [
         (JsButton.ALERT),
@@ -47,134 +65,175 @@ class TestElements:
         (JsButton.PROMPT),
     ])
     def test_js_click_alerts(self, browser, button_name):
-        alerts_page = AlertsPage(browser)
+        test_word = faker.Faker().word()
+
+        alerts_page = AlertsPage(browser, test_word)
+        browser.get(UrlUtils.create_url(URN.JS_ALERTS))
         assert alerts_page.is_loaded(), "No open alerts page"
 
         alerts_page.js_click_button(button_name)
-        assert alerts_page.is_alert_text_correctly(button_name), \
-            f"Expected alert text: '{alerts_page.BUTTONS[button_name].alert_expected_text}' not matched actual text: '{alerts_page.alert_text}'"
+
+        expected = AlertPageExpectedRes(button_name, test_word)
+
+        assert expected.data.alert_expected_text == alerts_page.actual_alert_text, \
+            f"Expected alert text: '{expected.data.alert_expected_text}' not matched actual text: '{alerts_page.actual_alert_text}'"
 
         alerts_page.js_click_ok_alert_button()
-        assert alerts_page.is_result_text_correctly(button_name), \
-            f"Expected result text: '{alerts_page.BUTTONS[button_name].result_expected_text}' not matched actual text: '{alerts_page.result_text}'"
+
+        assert expected.data.result_expected_text == alerts_page.actual_result_text, \
+            f"Expected alert text: '{expected.data.result_expected_text}' not matched actual text: '{alerts_page.actual_result_text}'"
 
     def test_select_context_menu(self, browser):
         context_page = ContexPage(browser)
+        browser.get(UrlUtils.create_url(URN.CONTEX_MENU))
         assert context_page.is_loaded(), "No open context page"
 
+        expected = ContextPageExpectedRes()
+
         context_page.right_hot_spot_click()
-        assert context_page.actual_alert_text == context_page.expected_alert_text, \
-            f"Expected alert text: '{context_page.actual_alert_text}' not matched actual text: '{context_page.expected_alert_text}'"
+        assert context_page.actual_alert_text == expected.alert_text, \
+            f"Expected alert text: '{context_page.actual_alert_text}' not matched actual text: '{expected.alert_text}'"
 
         context_page.click_ok_alert_button()
-        assert context_page.is_alert_closed(), "Alert no close"
+        assert browser.is_alert_closed(), "Alert no close"
 
     def test_set_random_slider_value(self, browser):
         h_slider_page = HSliderPage(browser)
-        assert h_slider_page.is_loaded(), "No open actions page"
+        browser.get(UrlUtils.create_url(URN.HORIZONTAL_SLIDER))
+        assert h_slider_page.is_loaded(), "No open slider page"
 
-        h_slider_page.set_random_hover_value()
-        assert h_slider_page.expected_hover_state_value == h_slider_page.actual_hover_state_vale, \
-            f"Expected hover state: {h_slider_page.expected_hover_state_value} not matched actual value: {h_slider_page.actual_hover_state_vale}"
+        expected_value = RandomUtils.get_random_value_with_step(h_slider_page.min_hover_value,
+                                                                h_slider_page.max_hover_value,
+                                                                h_slider_page.hover_step_value)
+
+        h_slider_page.set_hover_value(expected_value)
+        assert expected_value == h_slider_page.actual_hover_state_vale, \
+            f"Expected hover state: {expected_value} not matched actual value: {h_slider_page.actual_hover_state_vale}"
 
     def test_hover_random_user(self, browser):
         hovers_page = HoversPage(browser)
+        browser.get(UrlUtils.create_url(URN.HOVERS))
         assert hovers_page.is_loaded(), "No open Hover page"
 
-        hovers_page.hover_random_user()
-        assert hovers_page.expected_user_name == hovers_page.actual_user_name, \
-            f"Expected user name: {hovers_page.expected_user_name} not matched actual value: {hovers_page.actual_user_name}"
+        expected_user_number = randint(1, hovers_page.user_count)
+        hovers_page.hover_random_user(expected_user_number)
+
+        assert expected_user_number == hovers_page.actual_user_number, \
+            f"Expected card name: {expected_user_number} not matched actual value: {hovers_page.actual_user_number}"
 
         hovers_page.click_view_profile()
         """Здесь при открытии страницы ошибка, поэтому можно только линку проверить"""
-        assert hovers_page.expected_user_link == hovers_page.actual_user_link, \
-            f"Expected user link: {hovers_page.expected_user_link} not matched actual link: {hovers_page.actual_user_link}"
+        expected = HoversPageExpectedRes(expected_user_number)
+        assert expected.user_link == hovers_page.actual_user_link, \
+            f"Expected user link: {expected.user_link} not matched actual link: {hovers_page.actual_user_link}"
 
     def test_switch_handlers(self, browser):
         main_handlers_page = HandlersPage(browser)
+        browser.get(UrlUtils.create_url(URN.HANDLERS))
         assert main_handlers_page.is_loaded(), "No opem handlers page"
 
         first_tab = main_handlers_page.open_new_tab()
-
         assert first_tab.is_loaded(), "No open new handlers page"
-        assert first_tab.is_correct_title_name(), \
-            f"Expected window title: {first_tab.expected_title} no mathc actual: {first_tab.actual_title}"
+
+        expected = NewTabHandlersPageExpectedRes()
+        assert expected.title == first_tab.actual_title, \
+            f"Expected window title: {expected.title} no mathc actual: {first_tab.actual_title}"
 
         first_tab.come_back_main_page()
         assert main_handlers_page.is_loaded(), "No return to main handler page from first tab"
 
         second_tab = main_handlers_page.open_new_tab()
-
         assert second_tab.is_loaded(), "No open new handlers page"
-        assert second_tab.is_correct_title_name(), \
-            f"Expected window title: {second_tab.expected_title} no mathc actual: {second_tab.actual_title}"
+
+        assert expected.title == second_tab.actual_title, \
+            f"Expected window title: {expected.title} no mathc actual: {second_tab.actual_title}"
 
         second_tab.come_back_main_page()
         assert main_handlers_page.is_loaded(), "No return to main handler page from second tab"
 
         first_tab.close_tab()
-        assert main_handlers_page.is_closed_new_tab(first_tab.handle_id), "first tab is no close"
+        assert first_tab.handle_id not in browser.handles_list, "first tab is no close"
 
         second_tab.close_tab()
-        assert main_handlers_page.is_closed_new_tab(second_tab.handle_id), "second tab is no close"
+        assert second_tab.handle_id not in browser.handles_list, "second tab is no close"
 
     def test_switch_frame(self, browser):
         frames_page = FramePage(browser)
+        browser.get("https://demoqa.com/frames")
         assert frames_page.is_loaded(), "No open frames page"
 
-        frames_page.select_nested_frames()
+        frames_page.select_nested_frames_menu_item()
         nested_frames_page = NestedFramesPage(browser)
         assert nested_frames_page.is_loaded(), "No open nested frames page"
 
-        assert nested_frames_page.is_correct_parent_frame_text(), \
-            f"Expected text:'{nested_frames_page.expected_parent_text}' not match actual '{nested_frames_page.actual_parent_text}'"
-        assert nested_frames_page.is_correct_child_frame_text(), \
-            f"Expected text:'{nested_frames_page.expected_child_text}' not match actual '{nested_frames_page.actual_child_text}'"
+        expected = NestedFramesPageExpectedRes()
 
-        nested_frames_page.select_frame()
+        nested_frames_page.switch_to_frame(nested_frames_page.parent_frame)
+        assert expected.parent_frame_text == nested_frames_page.actual_parent_text, \
+            f"Expected text:'{expected.parent_frame_text}' not match actual '{nested_frames_page.actual_parent_text}'"
+
+        nested_frames_page.switch_to_frame(nested_frames_page.child_iframe)
+        assert expected.child_frame_text == nested_frames_page.actual_child_text, \
+            f"Expected text:'{expected.child_frame_text}' not match actual '{nested_frames_page.actual_child_text}'"
+
+        nested_frames_page.select_menu_item_frame()
         assert frames_page.is_loaded(), "No open frames page"
-        assert frames_page.is_match_frame_text(), \
-            f"text big frame: '{frames_page.actual_big_frame_text}' not match small frame:'{frames_page.actual_small_frame_text}'"
 
-    def test_match_img_after_update(self, browser):
+        assert frames_page.actual_big_frame_text == frames_page.actual_small_frame_text, \
+            f"Text big frame: '{frames_page.actual_big_frame_text}' not match small frame:'{frames_page.actual_small_frame_text}'"
+
+    def test_match_img_after_refresh(self, browser):
         dynamic_c_page = DynamicCPage(browser)
+        browser.get(UrlUtils.create_url(URN.DYNAMIC_CONTENT))
         assert dynamic_c_page.is_loaded(), "No open Dynamic c page"
 
-        dynamic_c_page.update_page_until_two_img_mathc()
-        assert dynamic_c_page.is_img_mathc(), \
-            f"There is {dynamic_c_page.count_primary_img} primary img from {dynamic_c_page.count_img} on the page"
+        dynamic_c_page.refresh_and_compare_two_images()
+        assert dynamic_c_page.first_same_element == dynamic_c_page.second_same_element, \
+            f"There is {dynamic_c_page.first_same_element} primary img from {dynamic_c_page.second_same_element} on the page"
 
-    def test_scroll_down_to_old(self, browser):
+    def test_scroll_down_to_age(self, browser):
         scroll_page = ScrollPage(browser)
+        browser.get(UrlUtils.create_url(URN.INFINITE_SCROLL))
         assert scroll_page.is_loaded(), "No open scroll page"
 
-        scroll_page.scroll_to_tab_count_old()
-        assert scroll_page.is_count_tab_match_old(), \
-            f"Expected tab: {scroll_page.old}, but got: {scroll_page.actual_count_tab}"
+        age = 27
+        scroll_page.scroll_to_tab_count_age(age)
+        assert age == scroll_page.actual_count_tab, \
+            f"Expected tab: {age}, but got: {scroll_page.actual_count_tab}"
 
     def test_load_file_from_select(self, browser):
         upload_page = UploadPage(browser)
+        browser.get(UrlUtils.create_url(URN.UPLOADS))
         assert upload_page.is_loaded(), "No open upload page"
 
-        upload_page.upload_file_from_select()
-        assert upload_page.is_correct_file_load_name(),\
-            f"Expected file name: {upload_page.expected_file_name} not match {upload_page.actual_file_name}"
+        random_file_path = FileUtils.get_random_file(FileUtils.get_folder_path("files_folder"))
+        expected_file_name = os.path.basename(random_file_path)
+
+        upload_page.upload_file_from_select(random_file_path)
+        assert expected_file_name == upload_page.actual_file_name, \
+            f"Expected file name: {expected_file_name} not match {upload_page.actual_file_name}"
 
     def test_load_file_from_system_window(self, browser):
         upload_page = UploadPage(browser)
+        browser.get(UrlUtils.create_url(URN.UPLOADS))
         assert upload_page.is_loaded(), "No open upload page"
 
-        upload_page.upload_file_autoit_click()
-        assert upload_page.is_correct_file_load_dr_dr_click(), \
-            f"Expected mark text :{upload_page.expected_check_mark_text} not match {upload_page.actual_check_mark_text}"
+        random_file_path = FileUtils.get_random_file(FileUtils.get_folder_path("files_folder"))
+        aut2exe_path = os.getenv("AUT2EXE_PATH")
+        expected = UploadPageExpectedRes()
 
+        upload_page.upload_file_autoit_click(random_file_path, aut2exe_path)
+        assert expected.check_mark == upload_page.actual_check_mark_text, \
+            f"Expected mark text :{expected.check_mark} not match {upload_page.actual_check_mark_text}"
 
     def test_load_file_drag_drop_action(self, browser):
         upload_page = UploadPage(browser)
+        browser.get(UrlUtils.create_url(URN.UPLOADS))
         assert upload_page.is_loaded(), "No open upload page"
 
-        upload_page.upload_file_drag_drop()
-        assert upload_page.is_correct_file_load_dr_dr_click(), \
-            f"Expected mark text :{upload_page.expected_check_mark_text} not match {upload_page.actual_check_mark_text}"
+        random_file_path = FileUtils.get_random_file(FileUtils.get_folder_path("files_folder"))
+        expected = UploadPageExpectedRes()
 
-
+        upload_page.upload_file_drag_drop(random_file_path)
+        assert expected.check_mark == upload_page.actual_check_mark_text, \
+            f"Expected mark text :{expected.check_mark} not match {upload_page.actual_check_mark_text}"

@@ -1,5 +1,3 @@
-import time
-
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
@@ -70,21 +68,23 @@ class BaseElement:
     def wait_for_visible(self) -> WebElement:
         return self._wait_for(expected_condition=expected_conditions.visibility_of_element_located)
 
-    def wait_for_visible_all(self) -> list:
-        return self._wait_for(expected_condition=expected_conditions.presence_of_all_elements_located)
 
     def is_exists(self):
         try:
             self.wait_for_presence()
+            Logger.info(f"{self} element is exists")
             return True
         except TimeoutException:
+            Logger.error(f"{self} element not exists")
             return False
 
     def is_visible(self):
         try:
             self.wait_for_visible()
+            Logger.info(f"{self} element is visible")
             return True
         except TimeoutException:
+            Logger.error(f"{self} element not visible")
             return False
 
     def click(self) -> None:
@@ -101,16 +101,16 @@ class BaseElement:
         Logger.info(f"{self}: js click")
         self.browser.execute_script("arguments[0].click();", element)
 
-
     def click_and_hold(self):
-        element = self.wait_for_presence()
+        element = self.wait_for_clickable()
         Logger.info(f"{self}: click and hold")
         self.actions.click_and_hold(element)
 
-    def move_to_element_release(self, move_area):
-        Logger.info(f"{self}: move element to area {move_area}")
-        self.actions.move_to_element(move_area)
-        Logger.info(f"{self}: release mouse button")
+    def move_and_drop(self):
+        element = self.wait_for_clickable()
+        Logger.info(f"{self}: move to {element}")
+        self.actions.move_to_element(element)
+        Logger.info(f"{self}: drop mouse button")
         self.actions.release().perform()
 
     def get_text(self) -> str:
@@ -146,15 +146,6 @@ class BaseElement:
         Logger.info(f"{self}: attribute '{name}' = '{value}'")
         return value
 
-    def get_count_item_teg(self):
-        elements_list = self.wait_for_visible_all()
-        Logger.info(f"{len(elements_list)}")
-        return len(elements_list)
-
-    def get_element(self):
-        element = self.wait_for_presence()
-        Logger.info(f"{self}: get element")
-        return element
 
     def right_click(self):
         element = self.wait_for_clickable()
@@ -164,3 +155,5 @@ class BaseElement:
         element = self.wait_for_visible()
         Logger.info(f"{self}: move element")
         self.actions.move_to_element(element).perform()
+
+

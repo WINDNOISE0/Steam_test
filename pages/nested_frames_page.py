@@ -1,3 +1,4 @@
+from elements.base_element import BaseElement
 from elements.button import Button
 from elements.label import Label
 from elements.web_element import WebElement
@@ -8,56 +9,42 @@ class NestedFramesPage(BasePage):
     UNIQUE_ELEMENT_LOC = "//div[@id='framesWrapper']//*[text()='Nested Frames']"
 
     PARENT_FRAME_LOC = "frame1"
-    PARENT_FRAME_TEXT = "Parent frame"
-
     CHILD_IFRAME_LOC = "//iframe[@srcdoc='<p>Child Iframe</p>']"
-    CHILD_IFRAME_TEXT = "Child Iframe"
 
-    FRAMES_BUTTON_LOC = "//span[text() = 'Frames']"
+    FRAMES_MENU_ITEM_LOC = "//span[text() = 'Frames']"
 
     def __init__(self, browser):
         super().__init__(browser)
 
         self.unique_element = Label(browser, self.UNIQUE_ELEMENT_LOC)
 
-        self.frames_button = Button(browser, self.FRAMES_BUTTON_LOC)
+        self.frames_button = Button(browser, self.FRAMES_MENU_ITEM_LOC)
 
-        self._actual_parent_frame_text = None
-        self._actual_child_iframe_text = None
+        self._parent_frame = WebElement(self.browser, self.PARENT_FRAME_LOC)
+        self.parent_frame_body = WebElement(self.browser, "//body")
 
+        self._child_iframe = WebElement(self.browser, self.CHILD_IFRAME_LOC)
+        self.child_iframe_body = WebElement(self.browser, "//body")
 
-    def is_correct_parent_frame_text(self):
-        parent_frame = WebElement(self.browser, self.PARENT_FRAME_LOC)
-        self.browser.switch_to_frame(parent_frame)
+    def switch_to_frame(self, frame: BaseElement):
+        self.browser.switch_to_frame(frame)
 
-        self._actual_parent_frame_text = WebElement(self.browser, "//body").get_text()
-
-        return self._actual_parent_frame_text == self.PARENT_FRAME_TEXT
-
-    def is_correct_child_frame_text(self):
-        child_iframe = WebElement(self.browser, self.CHILD_IFRAME_LOC)
-        self.browser.switch_to_frame(child_iframe)
-
-        self._actual_child_iframe_text= WebElement(self.browser, "//body").get_text()
-
-        return self._actual_child_iframe_text == self.CHILD_IFRAME_TEXT
-
-    def select_frame(self):
+    def select_menu_item_frame(self):
         self.browser.switch_to_default_frame()
         self.frames_button.click()
 
     @property
-    def expected_parent_text(self):
-        return self.PARENT_FRAME_TEXT
+    def parent_frame(self):
+        return self._parent_frame
 
     @property
-    def expected_child_text(self):
-        return self.CHILD_IFRAME_TEXT
+    def child_iframe(self):
+        return self._child_iframe
 
     @property
     def actual_parent_text(self):
-        return self._actual_parent_frame_text
+        return self.parent_frame_body.get_text()
 
     @property
     def actual_child_text(self):
-        return self._actual_child_iframe_text
+        return self.child_iframe_body.get_text()

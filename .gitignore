@@ -9,6 +9,7 @@ venv/
 .env/
 env/
 .venv/
+.env
 pip-log.txt
 pip-delete-this-directory.txt
 
