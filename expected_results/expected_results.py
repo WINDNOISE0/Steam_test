@@ -8,6 +8,7 @@ from test_config import TestConfig
 
 @dataclass
 class AlertPageExpectedRes:
+
     button_name: str
     test_name: str
     buttons: dict = field(default_factory=

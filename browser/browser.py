@@ -167,7 +167,12 @@ class Browser:
         return self.driver.current_url
 
     @property
-    def handles_list(self):
+    def currency_window_handle_id(self):
+        Logger.info(f"{self}: get currency handle  id")
+        return self._driver.current_window_handle
+
+    @property
+    def window_handles(self):
         Logger.info(f"{self}: get all browser window handles")
         return self._driver.window_handles
 

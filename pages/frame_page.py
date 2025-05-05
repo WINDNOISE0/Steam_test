@@ -1,4 +1,3 @@
-from elements.base_element import BaseElement
 from elements.button import Button
 from elements.label import Label
 from elements.web_element import WebElement
@@ -7,7 +6,7 @@ from pages.base_page import BasePage
 
 
 class FramePage(BasePage):
-    UNIQUE_ELEMENT_LOC = "//div[@id='framesWrapper']//*[text()='Frames']"
+    UNIQUE_ELEMENT_LOC = "//*[@id='framesWrapper']//*[text()='Frames']"
     NESTED_FRAMES_BUTTON_LOC = "//span[contains(text(), 'Nested Frames')]"
 
     FRAME_TEXT_LOC = "sampleHeading"
@@ -21,27 +20,24 @@ class FramePage(BasePage):
         self.unique_element = Label(browser, self.UNIQUE_ELEMENT_LOC)
         self.nested_frames_button = Button(browser, self.NESTED_FRAMES_BUTTON_LOC)
 
-        self._big_frame = WebElement(self.browser, self.BIG_FRAME_LOC)
+        self.big_frame = WebElement(self.browser, self.BIG_FRAME_LOC)
         self.frame_text = WebElement(self.browser, self.FRAME_TEXT_LOC)
 
-        self._small_frame = WebElement(self.browser, self.SMALL_FRAME_LOC)
+        self.small_frame = WebElement(self.browser, self.SMALL_FRAME_LOC)
 
     def select_nested_frames_menu_item(self):
         self.nested_frames_button.js_click()
 
-    def switch_to_frame(self, frame: BaseElement):
-        self.browser.switch_to_frame(frame)
-
     @property
     def actual_big_frame_text(self):
-        self.switch_to_frame(self._big_frame)
+        self.browser.switch_to_frame(self.big_frame)
         frame_text = self.frame_text.get_text()
         self.browser.switch_to_default_frame()
         return frame_text
 
     @property
     def actual_small_frame_text(self):
-        self.switch_to_frame(self._small_frame)
+        self.browser.switch_to_frame(self.small_frame)
         frame_text = self.frame_text.get_text()
         self.browser.switch_to_default_frame()
         return frame_text

@@ -21,13 +21,8 @@ class BasePage:
         Logger.info(f"{self}: wait for open")
         self.unique_element.wait_for_presence()
 
-    def wait_for_loaded(self) -> None:
-        Logger.info(f"{self}: wait for page state --> completed")
-        self._wait.until(lambda driver: self.browser.driver.execute_script("return document.readyState") == "complete")
-
     def is_loaded(self) -> bool:
         try:
-            self.wait_for_loaded()
             self.wait_for_open()
             return True
         except TimeoutException:

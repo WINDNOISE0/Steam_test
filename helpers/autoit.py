@@ -2,12 +2,12 @@ import os
 import subprocess
 from helpers.files import FileUtils
 
+
 class AutoItUtils:
     SCRIPT_FILE_TEMP = "script_file_load.au3"
 
     @staticmethod
     def compile_au3_to_exe(au3_path, aut2exe_path):
-        aut2exe_path = r"C:\Program Files (x86)\AutoIt3\Aut2Exe\Aut2Exe.exe"
         new_folder_path = os.path.dirname(au3_path)
         name, _ = os.path.splitext(os.path.basename(au3_path))
         new_file_path = os.path.join(new_folder_path, f"{name}.exe")

@@ -3,7 +3,7 @@ from pages.base_page import BasePage
 
 
 class ContexPage(BasePage):
-    UNIQUE_ELEMENT_LOC = "//div[@id='content']//*[contains(text(), 'Context Menu')]"
+    UNIQUE_ELEMENT_LOC = "//*[@id='content']//*[contains(text(), 'Context Menu')]"
     HOT_SPOT = "hot-spot"
 
     def __init__(self, browser):

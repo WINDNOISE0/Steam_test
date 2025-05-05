@@ -5,7 +5,7 @@ from pages.new_tab_handlers_page import NewTabHandlersPage
 
 
 class HandlersPage(BasePage):
-    UNIQUE_ELEMENT_LOC = "//div[@id='content']//*[contains(text(), 'Opening a new window')]"
+    UNIQUE_ELEMENT_LOC = "//*[@id='content']//*[contains(text(), 'Opening a new window')]"
 
     CLICK_HERE_BUTTON_LOC = "//a[contains(text(), 'Click Here')]"
 
@@ -14,15 +14,8 @@ class HandlersPage(BasePage):
         self.unique_element = Label(browser, self.UNIQUE_ELEMENT_LOC)
         self.click_here_button = Button(browser, self.CLICK_HERE_BUTTON_LOC)
 
-        self.new_page_index = []
-
-    def open_new_tab(self):
+    def open_new_tab(self) -> (NewTabHandlersPage, str):
         self.click_here_button.click()
-        new_handle_id = self.browser.get_handle_id_list()[-1]
-        new_page_object = NewTabHandlersPage(self.browser, new_handle_id)
+        new_page_object = NewTabHandlersPage(self.browser)
 
-        self.browser.switch_to_handle_window(new_page_object.handle_id)
-        return new_page_object
-
-    def is_closed_new_tab(self, handles_id: str):
-        return handles_id not in self.browser.driver.window_handles
+        return new_page_object, self.browser.currency_window_handle_id

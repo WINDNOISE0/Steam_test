@@ -5,7 +5,7 @@ from pages.base_page import BasePage
 
 
 class HSliderPage(BasePage):
-    UNIQUE_ELEMENT_LOC = "//div[@id='content']//*[contains(text(), 'Horizontal Slider')]"
+    UNIQUE_ELEMENT_LOC = "//*[@id='content']//*[contains(text(), 'Horizontal Slider')]"
 
     HOVER_LOC = "//input[@type='range']"
     ACTUAL_HOVER_STATE_LOC = "range"
@@ -18,8 +18,6 @@ class HSliderPage(BasePage):
 
         self.hover_state = WebElement(self.browser, self.ACTUAL_HOVER_STATE_LOC)
 
-        self._expected_hover_state_value = None
-
     def set_hover_value(self, value):
         self.slider.set_slider_value(value)
 
@@ -29,12 +27,12 @@ class HSliderPage(BasePage):
 
     @property
     def min_hover_value(self):
-        return int(float(self.slider.get_attribute("min")))
+        return self.slider.get_attribute("min")
 
     @property
     def max_hover_value(self):
-        return int(float(self.slider.get_attribute("max"))) - 1
+        return self.slider.get_attribute("max")
 
     @property
     def hover_step_value(self):
-        return float(self.slider.get_attribute("step"))
+        return self.slider.get_attribute("step")

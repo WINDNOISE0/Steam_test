@@ -1,5 +1,3 @@
-import os
-
 from elements.button import Button
 from elements.input import Input
 from elements.label import Label
@@ -8,14 +6,14 @@ from pages.base_page import BasePage
 
 
 class UploadPage(BasePage):
-    UNIQUE_ELEMENT_LOC = "//div[@id='content']//*[contains(text(), 'File Uploader')]"
+    UNIQUE_ELEMENT_LOC = "//*[@id='content']//*[contains(text(), 'File Uploader')]"
 
     SELECT_FILE_BUTTON_LOC = "file-upload"
     UPLOAD_FILE_BUTTON_LOC = "file-submit"
     LOAD_FILE_NAME_LOC = "uploaded-files"
 
     DRAG_DROP_AREA_LOC = "drag-drop-upload"
-    CHECK_MARK_LOC = "//div[@id='drag-drop-upload']//div[@class='dz-success-mark']//span"
+    CHECK_MARK_LOC = "//*[@id='drag-drop-upload']//*[contains(@class, 'dz-success-mark')]//span"
     DRAG_DROP_INPUT_LOC = "//input[@class='dz-hidden-input']"
 
     def __init__(self, browser):

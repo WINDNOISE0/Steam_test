@@ -31,8 +31,10 @@ class TestElements:
         authorize_page = AuthorizePage(browser)
 
         browser.get(UrlUtils.create_url(URN.AUTHORIZE))
+        authorize_link = UrlUtils.create_basic_auth_link(URN.AUTHORIZE, username=username, password=password)
 
-        authorize_page.authorize(username, password)
+        browser.get(authorize_link)
+
         assert authorize_page.is_loaded(), "Authorize not successful, header no visible"
 
     @pytest.mark.parametrize("button_name", [
@@ -41,9 +43,11 @@ class TestElements:
         (JsButton.PROMPT),
     ])
     def test_click_alerts(self, browser, button_name):
-        test_word = faker.Faker().word()
+        test_word = None
+        if button_name == JsButton.PROMPT:
+            test_word = faker.Faker().word()
 
-        alerts_page = AlertsPage(browser, test_word)
+        alerts_page = AlertsPage(browser)
         browser.get(UrlUtils.create_url(URN.JS_ALERTS))
         assert alerts_page.is_loaded(), "No open alerts page"
 
@@ -54,7 +58,7 @@ class TestElements:
         assert expected.data.alert_expected_text == alerts_page.actual_alert_text, \
             f"Expected alert text: '{expected.data.alert_expected_text}' not matched actual text: '{alerts_page.actual_alert_text}'"
 
-        alerts_page.click_ok_alert_button()
+        alerts_page.click_ok_alert_button(test_word)
 
         assert expected.data.result_expected_text == alerts_page.actual_result_text, \
             f"Expected alert text: '{expected.data.result_expected_text}' not matched actual text: '{alerts_page.actual_result_text}'"
@@ -65,9 +69,11 @@ class TestElements:
         (JsButton.PROMPT),
     ])
     def test_js_click_alerts(self, browser, button_name):
-        test_word = faker.Faker().word()
+        test_word = None
+        if button_name == JsButton.PROMPT:
+            test_word = faker.Faker().word()
 
-        alerts_page = AlertsPage(browser, test_word)
+        alerts_page = AlertsPage(browser)
         browser.get(UrlUtils.create_url(URN.JS_ALERTS))
         assert alerts_page.is_loaded(), "No open alerts page"
 
@@ -78,7 +84,7 @@ class TestElements:
         assert expected.data.alert_expected_text == alerts_page.actual_alert_text, \
             f"Expected alert text: '{expected.data.alert_expected_text}' not matched actual text: '{alerts_page.actual_alert_text}'"
 
-        alerts_page.js_click_ok_alert_button()
+        alerts_page.js_click_ok_alert_button(test_word)
 
         assert expected.data.result_expected_text == alerts_page.actual_result_text, \
             f"Expected alert text: '{expected.data.result_expected_text}' not matched actual text: '{alerts_page.actual_result_text}'"
@@ -118,10 +124,10 @@ class TestElements:
         expected_user_number = randint(1, hovers_page.user_count)
         hovers_page.hover_random_user(expected_user_number)
 
-        assert expected_user_number == hovers_page.actual_user_number, \
-            f"Expected card name: {expected_user_number} not matched actual value: {hovers_page.actual_user_number}"
+        assert expected_user_number == hovers_page.get_actual_user_number(expected_user_number), \
+            f"Expected card name: {expected_user_number} not matched actual value: {hovers_page.get_actual_user_number(expected_user_number)}"
 
-        hovers_page.click_view_profile()
+        hovers_page.click_view_profile(expected_user_number)
         """Здесь при открытии страницы ошибка, поэтому можно только линку проверить"""
         expected = HoversPageExpectedRes(expected_user_number)
         assert expected.user_link == hovers_page.actual_user_link, \
@@ -132,30 +138,37 @@ class TestElements:
         browser.get(UrlUtils.create_url(URN.HANDLERS))
         assert main_handlers_page.is_loaded(), "No opem handlers page"
 
-        first_tab = main_handlers_page.open_new_tab()
-        assert first_tab.is_loaded(), "No open new handlers page"
+        """    ======================== Open first page ==========================    """
+
+        first_window, first_window_id = main_handlers_page.open_new_tab()
+        browser.switch_to_handle_window(first_window_id)
+        assert first_window.is_loaded(), "No open new handlers page"
 
         expected = NewTabHandlersPageExpectedRes()
-        assert expected.title == first_tab.actual_title, \
-            f"Expected window title: {expected.title} no mathc actual: {first_tab.actual_title}"
+        assert expected.title == first_window.actual_title, \
+            f"Expected window title: {expected.title} no mathc actual: {first_window.actual_title}"
 
-        first_tab.come_back_main_page()
+        first_window.come_back_main_page()
         assert main_handlers_page.is_loaded(), "No return to main handler page from first tab"
 
-        second_tab = main_handlers_page.open_new_tab()
-        assert second_tab.is_loaded(), "No open new handlers page"
+        """    ======================== Open second page ==========================    """
 
-        assert expected.title == second_tab.actual_title, \
-            f"Expected window title: {expected.title} no mathc actual: {second_tab.actual_title}"
+        second_window, second_window_id = main_handlers_page.open_new_tab()
+        assert second_window.is_loaded(), "No open new handlers page"
 
-        second_tab.come_back_main_page()
+        assert expected.title == second_window.actual_title, \
+            f"Expected window title: {expected.title} no mathc actual: {second_window.actual_title}"
+
+        second_window.come_back_main_page()
         assert main_handlers_page.is_loaded(), "No return to main handler page from second tab"
 
-        first_tab.close_tab()
-        assert first_tab.handle_id not in browser.handles_list, "first tab is no close"
+        browser.switch_to_handle_window(first_window_id)
+        first_window.close_tab()
+        assert first_window.handle_id not in browser.handles_list, "first tab is no close"
 
-        second_tab.close_tab()
-        assert second_tab.handle_id not in browser.handles_list, "second tab is no close"
+        browser.switch_to_handle_window(second_window_id)
+        second_window_id.close_tab()
+        assert second_window_id.handle_id not in browser.handles_list, "second tab is no close"
 
     def test_switch_frame(self, browser):
         frames_page = FramePage(browser)
@@ -168,13 +181,15 @@ class TestElements:
 
         expected = NestedFramesPageExpectedRes()
 
-        nested_frames_page.switch_to_frame(nested_frames_page.parent_frame)
+        nested_frames_page.switch_to_parent_frame()
         assert expected.parent_frame_text == nested_frames_page.actual_parent_text, \
             f"Expected text:'{expected.parent_frame_text}' not match actual '{nested_frames_page.actual_parent_text}'"
 
-        nested_frames_page.switch_to_frame(nested_frames_page.child_iframe)
+        nested_frames_page.switch_to_child_frame()
         assert expected.child_frame_text == nested_frames_page.actual_child_text, \
             f"Expected text:'{expected.child_frame_text}' not match actual '{nested_frames_page.actual_child_text}'"
+
+        self.browser.switch_to_default_frame()
 
         nested_frames_page.select_menu_item_frame()
         assert frames_page.is_loaded(), "No open frames page"
@@ -187,9 +202,10 @@ class TestElements:
         browser.get(UrlUtils.create_url(URN.DYNAMIC_CONTENT))
         assert dynamic_c_page.is_loaded(), "No open Dynamic c page"
 
-        dynamic_c_page.refresh_and_compare_two_images()
-        assert dynamic_c_page.first_same_element == dynamic_c_page.second_same_element, \
-            f"There is {dynamic_c_page.first_same_element} primary img from {dynamic_c_page.second_same_element} on the page"
+        find_timeout = 10
+        dynamic_c_page.refresh_and_compare_two_images(find_timeout=find_timeout)
+        assert dynamic_c_page.count_images != dynamic_c_page.count_primary_image, \
+            f"There is no duplicate on the page for: {find_timeout} sec. page update"
 
     def test_scroll_down_to_age(self, browser):
         scroll_page = ScrollPage(browser)

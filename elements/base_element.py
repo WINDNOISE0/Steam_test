@@ -5,6 +5,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 from selenium.webdriver.support import expected_conditions
 from seleniumbase.common.exceptions import TimeoutException, WebDriverException
+from selenium.common.exceptions import TimeoutException as TimeEx
 
 from logger.logger import Logger
 
@@ -68,13 +69,12 @@ class BaseElement:
     def wait_for_visible(self) -> WebElement:
         return self._wait_for(expected_condition=expected_conditions.visibility_of_element_located)
 
-
     def is_exists(self):
         try:
             self.wait_for_presence()
             Logger.info(f"{self} element is exists")
             return True
-        except TimeoutException:
+        except (TimeoutException, TimeEx):
             Logger.error(f"{self} element not exists")
             return False
 
@@ -107,7 +107,7 @@ class BaseElement:
         self.actions.click_and_hold(element)
 
     def move_and_drop(self):
-        element = self.wait_for_clickable()
+        element = self.wait_for_visible()
         Logger.info(f"{self}: move to {element}")
         self.actions.move_to_element(element)
         Logger.info(f"{self}: drop mouse button")
@@ -146,9 +146,9 @@ class BaseElement:
         Logger.info(f"{self}: attribute '{name}' = '{value}'")
         return value
 
-
     def right_click(self):
         element = self.wait_for_clickable()
+        Logger.info(f"{self}: right click to element")
         self.actions.context_click(element).perform()
 
     def move_to_element(self):
@@ -156,4 +156,7 @@ class BaseElement:
         Logger.info(f"{self}: move element")
         self.actions.move_to_element(element).perform()
 
-
+    def get_selenium_element(self):
+        element = self.wait_for_visible()
+        Logger.info(f"{self}: get selenium element")
+        return element
