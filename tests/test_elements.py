@@ -9,6 +9,7 @@ from expected_results.expected_results import AlertPageExpectedRes, ContextPageE
 from helpers import UrlUtils, RandomUtils, FileUtils
 from helpers.enpoints_urn import URN
 from helpers.js_button import JsButton
+from logger.logger import Logger
 from pages.dynamic_c_page import DynamicCPage
 from pages.frame_page import FramePage
 from pages.h_slider_page import HSliderPage
@@ -24,6 +25,10 @@ from test_config import TestConfig
 
 
 class TestElements:
+    AGE = 27
+    FIND_TIMEOUT = 10
+
+
     @pytest.mark.parametrize("username, password", [
         (TestConfig.USERNAME, TestConfig.PASSWORD)
     ])
@@ -138,7 +143,7 @@ class TestElements:
         browser.get(UrlUtils.create_url(URN.HANDLERS))
         assert main_handlers_page.is_loaded(), "No opem handlers page"
 
-        """    ======================== Open first page ==========================    """
+        Logger.info("""\n\n    ======================== Open first page ==========================    \n\n""")
 
         first_window, first_window_id = main_handlers_page.open_new_tab()
         browser.switch_to_handle_window(first_window_id)
@@ -151,7 +156,7 @@ class TestElements:
         first_window.come_back_main_page()
         assert main_handlers_page.is_loaded(), "No return to main handler page from first tab"
 
-        """    ======================== Open second page ==========================    """
+        Logger.info("""\n\n    ======================== Open second page ==========================    \n\n""")
 
         second_window, second_window_id = main_handlers_page.open_new_tab()
         assert second_window.is_loaded(), "No open new handlers page"
@@ -202,20 +207,19 @@ class TestElements:
         browser.get(UrlUtils.create_url(URN.DYNAMIC_CONTENT))
         assert dynamic_c_page.is_loaded(), "No open Dynamic c page"
 
-        find_timeout = 10
-        dynamic_c_page.refresh_and_compare_two_images(find_timeout=find_timeout)
+
+        dynamic_c_page.refresh_and_compare_two_images(find_timeout=self.FIND_TIMEOUT)
         assert dynamic_c_page.count_images != dynamic_c_page.count_primary_image, \
-            f"There is no duplicate on the page for: {find_timeout} sec. page update"
+            f"There is no duplicate on the page for: {self.FIND_TIMEOUT} sec. page update"
 
     def test_scroll_down_to_age(self, browser):
         scroll_page = ScrollPage(browser)
         browser.get(UrlUtils.create_url(URN.INFINITE_SCROLL))
         assert scroll_page.is_loaded(), "No open scroll page"
 
-        age = 27
-        scroll_page.scroll_to_tab_count_age(age)
-        assert age == scroll_page.actual_count_tab, \
-            f"Expected tab: {age}, but got: {scroll_page.actual_count_tab}"
+        scroll_page.scroll_to_tab_count_age(self.AGE)
+        assert self.AGE == scroll_page.actual_count_tab, \
+            f"Expected tab: {self.AGE}, but got: {scroll_page.actual_count_tab}"
 
     def test_load_file_from_select(self, browser):
         upload_page = UploadPage(browser)
@@ -242,7 +246,7 @@ class TestElements:
         assert expected.check_mark == upload_page.actual_check_mark_text, \
             f"Expected mark text :{expected.check_mark} not match {upload_page.actual_check_mark_text}"
 
-    def test_load_file_drag_drop_action(self, browser):
+    def test_upload_file_hide_input(self, browser):
         upload_page = UploadPage(browser)
         browser.get(UrlUtils.create_url(URN.UPLOADS))
         assert upload_page.is_loaded(), "No open upload page"
@@ -250,6 +254,6 @@ class TestElements:
         random_file_path = FileUtils.get_random_file(FileUtils.get_folder_path("files_folder"))
         expected = UploadPageExpectedRes()
 
-        upload_page.upload_file_drag_drop(random_file_path)
+        upload_page.upload_file_hide_input(random_file_path)
         assert expected.check_mark == upload_page.actual_check_mark_text, \
             f"Expected mark text :{expected.check_mark} not match {upload_page.actual_check_mark_text}"

@@ -37,9 +37,8 @@ class UploadPage(BasePage):
         self.drag_drop_area.click()
         AutoItUtils.perform_load_autoit_script(file_path, aut2exe_path)
 
-    def upload_file_drag_drop(self, file_path: str):
-        self.drag_drop_input.send_drag_drop_file_key(file_path)
-        self.drag_drop_area.move_and_drop()
+    def upload_file_hide_input(self, file_path: str):
+        self.drag_drop_input.send_keys(file_path, hide_element=True)
 
     @property
     def actual_file_name(self):

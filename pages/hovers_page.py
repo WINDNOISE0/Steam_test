@@ -37,4 +37,4 @@ class HoversPage(BasePage):
 
     @property
     def user_count(self):
-        return self.users_cards.get_count_item_tag()
+        return len(self.users_cards)

@@ -3,6 +3,8 @@ import time
 from elements.button import Button
 from elements.label import Label
 from elements.multy_web_element import MultyWebElement
+from elements.web_element import WebElement
+from logger.logger import Logger
 from pages.base_page import BasePage
 
 
@@ -23,6 +25,12 @@ class DynamicCPage(BasePage):
         self.unique_element = Label(browser, self.UNIQUE_ELEMENT_LOC)
         self.update_button = Button(browser, self.UPDATE_BUTTON_LOC)
         self.images = MultyWebElement(browser, self.LINK_IMAGE_LOC, timeout=self.TIMEOUT_FIND_ELEMENT)
+
+
+    def get_tag_links_list(self, elements, attri):
+        attributes_list = []
+        for element in elements:
+            attributes_list.append(element.get_attribute(attribute_name))
 
     def refresh_and_compare_two_images(self, find_timeout=TIMEOUT_STOP_FIND_ELEMENT):
         start = time.time()

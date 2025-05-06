@@ -18,4 +18,4 @@ class HandlersPage(BasePage):
         self.click_here_button.click()
         new_page_object = NewTabHandlersPage(self.browser)
 
-        return new_page_object, self.browser.currency_window_handle_id
+        return new_page_object, self.browser.current_window_handle_id
