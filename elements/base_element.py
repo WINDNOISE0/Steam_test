@@ -4,7 +4,8 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.wait import WebDriverWait
 
 from selenium.webdriver.support import expected_conditions
-from seleniumbase.common.exceptions import TimeoutException, WebDriverException
+from selenium.common.exceptions import TimeoutException, WebDriverException
+
 
 from logger.logger import Logger
 

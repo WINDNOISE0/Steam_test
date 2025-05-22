@@ -1,19 +1,17 @@
-FROM byrnedo/alpine-curl:0.1.8 as curl
-RUN curl https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh > wait-for-it.sh
+FROM python:3.11-slim
 
-FROM python:3.9.0-alpine
+# Установка зависимостей
+RUN apt-get update && apt-get install -y \
+    curl unzip chromium-driver chromium
 
-# Копируем requirements.txt отдельно
-COPY requirements.txt .
+# Установка selenium и seleniumbase
+RUN pip install --upgrade pip
+RUN pip install selenium seleniumbase
 
-# Устанавливаем зависимости
-RUN pip install --upgrade pip && pip install -r requirements.txt
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
 
-# Копируем остальной проект
-COPY Steam_test/ /selenium_tests/
-WORKDIR /selenium_tests/
+WORKDIR /tests
+COPY . .
 
-# waiter
-COPY --from=curl wait-for-it.sh wait-for-it.sh
-RUN chmod +x wait-for-it.sh
-RUN apk add bash
+CMD ["pytest"]

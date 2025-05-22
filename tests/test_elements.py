@@ -145,29 +145,29 @@ class TestElements:
         Logger.info("""\n\n    ======================== Open first page ==========================    \n\n""")
 
         first_window = main_handlers_page.open_new_tab()
-        first_window_id = self.browser.current_window_handle
+        first_window_id = browser.current_window_handle
         browser.switch_to_handle_window(first_window_id)
         assert first_window.is_loaded(), "No open new handlers page"
 
         expected = NewTabHandlersPageExpectedRes()
-        first_window_title = self.browser.get_window_title()
+        first_window_title = browser.get_window_title()
         assert expected.title == first_window_title, \
             f"Expected window title: {expected.title} no mathc actual: {first_window_title}"
 
-        self.browser.switch_to_default_window()
+        browser.switch_to_default_window()
         assert main_handlers_page.is_loaded(), "No return to main handler page from first tab"
 
         Logger.info("""\n\n    ======================== Open second page ==========================    \n\n""")
 
         second_window = main_handlers_page.open_new_tab()
-        second_window_id = self.browser.current_window_handle
+        second_window_id = browser.current_window_handle
         assert second_window.is_loaded(), "No open new handlers page"
 
-        second_window_title = self.browser.get_window_title()
+        second_window_title = browser.get_window_title()
         assert expected.title == second_window_title, \
             f"Expected window title: {expected.title} no mathc actual: {second_window_title}"
 
-        self.browser.switch_to_default_window()
+        browser.switch_to_default_window()
         assert main_handlers_page.is_loaded(), "No return to main handler page from second tab"
 
         browser.switch_to_handle_window(first_window_id)
@@ -197,7 +197,7 @@ class TestElements:
         assert expected.child_frame_text == nested_frames_page.actual_child_text, \
             f"Expected text:'{expected.child_frame_text}' not match actual '{nested_frames_page.actual_child_text}'"
 
-        self.browser.switch_to_default_frame()
+        browser.switch_to_default_frame()
 
         nested_frames_page.select_menu_item_frame()
         assert frames_page.is_loaded(), "No open frames page"
@@ -235,6 +235,7 @@ class TestElements:
         assert expected_file_name == upload_page.actual_file_name, \
             f"Expected file name: {expected_file_name} not match {upload_page.actual_file_name}"
 
+    @pytest.mark.skip(reason="Disable for Dockerfile")
     def test_load_file_from_system_window(self, browser):
         upload_page = UploadPage(browser)
         browser.get(UrlUtils.create_url(URN.UPLOADS))
@@ -248,6 +249,7 @@ class TestElements:
         assert expected.check_mark == upload_page.actual_check_mark_text, \
             f"Expected mark text :{expected.check_mark} not match {upload_page.actual_check_mark_text}"
 
+    @pytest.mark.skip(reason="Disable for Dockerfile")
     def test_upload_file_hide_input(self, browser):
         upload_page = UploadPage(browser)
         browser.get(UrlUtils.create_url(URN.UPLOADS))

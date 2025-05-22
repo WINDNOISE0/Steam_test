@@ -1,7 +1,6 @@
 import time
 
-from selenium.common import WebDriverException, NoAlertPresentException
-
+from selenium.common.exceptions import WebDriverException, NoAlertPresentException
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
