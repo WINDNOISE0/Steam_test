@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34dc6ffc-8e16-48be-ac9b-a4c97fba067d" name="Changes" comment="for  ref Steam branch">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Steam_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Steam_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browser/browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/browser/browser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/base_element.py" beforeDir="false" afterPath="$PROJECT_DIR$/elements/base_element.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logs/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logs/test.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logs/test.log.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logs/test.log.10" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logs/test.log.10" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logs/test.log.2" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logs/test.log.2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logs/test.log.3" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logs/test.log.3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logs/test.log.4" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logs/test.log.4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logs/test.log.5" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logs/test.log.5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logs/test.log.6" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logs/test.log.6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logs/test.log.7" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logs/test.log.7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logs/test.log.8" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logs/test.log.8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logs/test.log.9" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logs/test.log.9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_elements.py" afterDir="false" />
-    </list>
+    <list default="true" id="34dc6ffc-8e16-48be-ac9b-a4c97fba067d" name="Changes" comment="Make Docker" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -420,7 +400,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746558963604</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Make Docker">
+      <option name="closed" value="true" />
+      <created>1747921203953</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1747921203953</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -471,7 +459,8 @@
     <MESSAGE value="Add last hw 2" />
     <MESSAGE value="Add last hw 3" />
     <MESSAGE value="for ref Steam branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="for ref Steam branch" />
+    <MESSAGE value="Make Docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make Docker" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
