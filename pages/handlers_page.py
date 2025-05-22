@@ -17,5 +17,6 @@ class HandlersPage(BasePage):
     def open_new_tab(self) -> (NewTabHandlersPage, str):
         self.click_here_button.click()
         new_page_object = NewTabHandlersPage(self.browser)
+        self.browser.switch_to_handle_window(self.browser.window_handles[-1])
 
-        return new_page_object, self.browser.current_window_handle_id
+        return new_page_object

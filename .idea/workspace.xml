@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="34dc6ffc-8e16-48be-ac9b-a4c97fba067d" name="Changes" comment="for  ref Steam branch">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browser/browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/browser/browser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/base_element.py" beforeDir="false" afterPath="$PROJECT_DIR$/elements/base_element.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/multy_web_element.py" beforeDir="false" afterPath="$PROJECT_DIR$/elements/multy_web_element.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/dynamic_c_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/dynamic_c_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/handlers_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/handlers_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/hovers_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hovers_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/nested_frames_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/nested_frames_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/new_tab_handlers_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/new_tab_handlers_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/scroll_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/scroll_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_elements.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test_steam_pom" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;WINDNOISE0&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/WINDNOISE0/Steam_test.git&quot;,
+    &quot;accountId&quot;: &quot;aa6a1e34-282f-4d74-b086-b2b75925ad01&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2tUDwBoxlqiVXrB3EAFLv6yn39d" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for test_find_product.TestFindProduct.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_find_product.TestFindProduct.test_find_and_sort_witcher.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_find_product.TestFindProduct.test_find_product_and_sort.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_one.TestOne.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_steam.TestSteam.test_authorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_steam1.TestSteam.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_steam1.TestSteam.test_authorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_authorization.TestAuthorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_authorization.TestAuthorization.test_simple_authorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_basic_auth.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_click_alerts.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_context_menu.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_hover_random_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_hover_random_value.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_js_click_alerts.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_load_file_drag_drop_action.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_load_file_from_dialog.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_load_file_from_select.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_load_file_from_system_window.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_load_random_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_match_img_after_refresh.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_match_img_after_update.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_scroll_down_to_age.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_scroll_down_to_old.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_select_context_menu.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_set_random_slider_value.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_switch_frame.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_elements.TestElements.test_switch_handlers.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_find_product.TestFindProduct.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#4 on test__herocuapp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/1/Desktop/QA/Auto/Steam_test&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\1\Desktop\QA\Auto\Steam_test" />
+      <recent name="C:\Users\1\Desktop\QA\Auto\Steam_test\tests" />
+      <recent name="C:\Users\1\Desktop\QA\Auto\Steam_test\test_data" />
+      <recent name="C:\Users\1\Desktop\QA\Auto\UIf\logger" />
+      <recent name="C:\Users\1\Desktop\QA\Auto\UIf\elements" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.pytest for test_elements.TestElements.test_switch_handlers">
+    <configuration name="pytest for test_elements.TestElements.test_load_file_from_select" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Steam_test" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_elements.TestElements.test_load_file_from_select&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_elements.TestElements.test_match_img_after_refresh" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Steam_test" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_elements.TestElements.test_match_img_after_refresh&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_elements.TestElements.test_scroll_down_to_age" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Steam_test" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_elements.TestElements.test_scroll_down_to_age&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_elements.TestElements.test_set_random_slider_value" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Steam_test" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_elements.TestElements.test_set_random_slider_value&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_elements.TestElements.test_switch_handlers" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Steam_test" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_elements.TestElements.test_switch_handlers&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for test_elements.TestElements.test_switch_handlers" />
+        <item itemvalue="Python tests.pytest for test_elements.TestElements.test_scroll_down_to_age" />
+        <item itemvalue="Python tests.pytest for test_elements.TestElements.test_match_img_after_refresh" />
+        <item itemvalue="Python tests.pytest for test_elements.TestElements.test_load_file_from_select" />
+        <item itemvalue="Python tests.pytest for test_elements.TestElements.test_set_random_slider_value" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34dc6ffc-8e16-48be-ac9b-a4c97fba067d" name="Changes" comment="" />
+      <created>1740397996513</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740397996513</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first_test_without_pom">
+      <option name="closed" value="true" />
+      <created>1740411925643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740411925643</updated>
+    </task>
+    <task id="LOCAL-00002" summary="second_test_POM">
+      <option name="closed" value="true" />
+      <created>1740742952974</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740742952974</updated>
+    </task>
+    <task id="LOCAL-00003" summary="third_test_POM">
+      <option name="closed" value="true" />
+      <created>1741596136039</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741596136039</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fourth_test_POM">
+      <option name="closed" value="true" />
+      <created>1741688099609</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741688099609</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix folder_name">
+      <option name="closed" value="true" />
+      <created>1741690622728</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741690622728</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix gitignore">
+      <option name="closed" value="true" />
+      <created>1741690859965</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741690859965</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix gitignore2">
+      <option name="closed" value="true" />
+      <created>1741690930039</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741690930039</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add new tests">
+      <option name="closed" value="true" />
+      <created>1742479518295</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742479518295</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1 commit">
+      <option name="closed" value="true" />
+      <created>1742480183418</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742480183418</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add test for Singeltone">
+      <option name="closed" value="true" />
+      <created>1742481248668</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1742481248668</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix after refactor with MultyElement 1">
+      <option name="closed" value="true" />
+      <created>1742822480815</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1742822480815</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix after refactor with MultyElement 1.1">
+      <option name="closed" value="true" />
+      <created>1742893261657</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1742893261657</updated>
+    </task>
+    <task id="LOCAL-00013" summary="change code in SingleTon">
+      <option name="closed" value="true" />
+      <created>1742900969870</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1742900969870</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix after review 2">
+      <option name="closed" value="true" />
+      <created>1742994779053</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1742994779053</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix after review 3">
+      <option name="closed" value="true" />
+      <created>1742997404898</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1742997404898</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix after review 4">
+      <option name="closed" value="true" />
+      <created>1742999721459</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1742999721459</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix Singleton 2">
+      <option name="closed" value="true" />
+      <created>1743004701195</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1743004701195</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix Singleton 3">
+      <option name="closed" value="true" />
+      <created>1743004711291</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1743004711291</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix test steam">
+      <option name="closed" value="true" />
+      <created>1743530173695</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1743530173695</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add last hw 1">
+      <option name="closed" value="true" />
+      <created>1745334814486</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1745334814486</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add last hw 1+">
+      <option name="closed" value="true" />
+      <created>1745334838847</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1745334838847</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add last hw 2">
+      <option name="closed" value="true" />
+      <created>1746009558755</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1746009558755</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add last hw 3">
+      <option name="closed" value="true" />
+      <created>1746452639275</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1746452639275</updated>
+    </task>
+    <task id="LOCAL-00024" summary="for ref Steam branch">
+      <option name="closed" value="true" />
+      <created>1746558963604</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1746558963604</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="test_steam_without_pom" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first_test_without_pom" />
+    <MESSAGE value="second_test_POM" />
+    <MESSAGE value="third_test_POM" />
+    <MESSAGE value="fourth_test_POM" />
+    <MESSAGE value="fix folder_name" />
+    <MESSAGE value="fix gitignore" />
+    <MESSAGE value="fix gitignore2" />
+    <MESSAGE value="add new tests" />
+    <MESSAGE value="1 commit" />
+    <MESSAGE value="add test for Singeltone" />
+    <MESSAGE value="fix after refactor with MultyElement 1" />
+    <MESSAGE value="fix after refactor with MultyElement 1.1" />
+    <MESSAGE value="change code in SingleTon" />
+    <MESSAGE value="fix after review 2" />
+    <MESSAGE value="fix after review 3" />
+    <MESSAGE value="fix after review 4" />
+    <MESSAGE value="fix Singleton 2" />
+    <MESSAGE value="fix Singleton 3" />
+    <MESSAGE value="fix test steam" />
+    <MESSAGE value="Add last hw 1" />
+    <MESSAGE value="Add last hw 1+" />
+    <MESSAGE value="Add last hw 2" />
+    <MESSAGE value="Add last hw 3" />
+    <MESSAGE value="for ref Steam branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="for ref Steam branch" />
+  </component>
+</project>

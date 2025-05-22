@@ -28,7 +28,6 @@ class TestElements:
     AGE = 27
     FIND_TIMEOUT = 10
 
-
     @pytest.mark.parametrize("username, password", [
         (TestConfig.USERNAME, TestConfig.PASSWORD)
     ])
@@ -145,35 +144,39 @@ class TestElements:
 
         Logger.info("""\n\n    ======================== Open first page ==========================    \n\n""")
 
-        first_window, first_window_id = main_handlers_page.open_new_tab()
+        first_window = main_handlers_page.open_new_tab()
+        first_window_id = self.browser.current_window_handle
         browser.switch_to_handle_window(first_window_id)
         assert first_window.is_loaded(), "No open new handlers page"
 
         expected = NewTabHandlersPageExpectedRes()
-        assert expected.title == first_window.actual_title, \
-            f"Expected window title: {expected.title} no mathc actual: {first_window.actual_title}"
+        first_window_title = self.browser.get_window_title()
+        assert expected.title == first_window_title, \
+            f"Expected window title: {expected.title} no mathc actual: {first_window_title}"
 
-        first_window.come_back_main_page()
+        self.browser.switch_to_default_window()
         assert main_handlers_page.is_loaded(), "No return to main handler page from first tab"
 
         Logger.info("""\n\n    ======================== Open second page ==========================    \n\n""")
 
-        second_window, second_window_id = main_handlers_page.open_new_tab()
+        second_window = main_handlers_page.open_new_tab()
+        second_window_id = self.browser.current_window_handle
         assert second_window.is_loaded(), "No open new handlers page"
 
-        assert expected.title == second_window.actual_title, \
-            f"Expected window title: {expected.title} no mathc actual: {second_window.actual_title}"
+        second_window_title = self.browser.get_window_title()
+        assert expected.title == second_window_title, \
+            f"Expected window title: {expected.title} no mathc actual: {second_window_title}"
 
-        second_window.come_back_main_page()
+        self.browser.switch_to_default_window()
         assert main_handlers_page.is_loaded(), "No return to main handler page from second tab"
 
         browser.switch_to_handle_window(first_window_id)
-        first_window.close_tab()
-        assert first_window.handle_id not in browser.handles_list, "first tab is no close"
+        browser.close()
+        assert first_window_id not in browser.window_handles, "first tab is no close"
 
         browser.switch_to_handle_window(second_window_id)
-        second_window_id.close_tab()
-        assert second_window_id.handle_id not in browser.handles_list, "second tab is no close"
+        browser.close()
+        assert second_window_id not in browser.window_handles, "second tab is no close"
 
     def test_switch_frame(self, browser):
         frames_page = FramePage(browser)
@@ -207,7 +210,6 @@ class TestElements:
         browser.get(UrlUtils.create_url(URN.DYNAMIC_CONTENT))
         assert dynamic_c_page.is_loaded(), "No open Dynamic c page"
 
-
         dynamic_c_page.refresh_and_compare_two_images(find_timeout=self.FIND_TIMEOUT)
         assert dynamic_c_page.count_images != dynamic_c_page.count_primary_image, \
             f"There is no duplicate on the page for: {self.FIND_TIMEOUT} sec. page update"
@@ -218,8 +220,8 @@ class TestElements:
         assert scroll_page.is_loaded(), "No open scroll page"
 
         scroll_page.scroll_to_tab_count_age(self.AGE)
-        assert self.AGE == scroll_page.actual_count_tab, \
-            f"Expected tab: {self.AGE}, but got: {scroll_page.actual_count_tab}"
+        assert self.AGE == scroll_page.count_tab, \
+            f"Expected tab: {self.AGE}, but got: {scroll_page.count_tab}"
 
     def test_load_file_from_select(self, browser):
         upload_page = UploadPage(browser)

@@ -143,14 +143,6 @@ class Browser:
         Logger.info(f"{self}: get window title")
         return self._driver.title
 
-    def get_id_current_handle(self) -> str:
-        Logger.info(f"{self}: get current handle id")
-        return self._driver.current_window_handle
-
-    def get_handle_id_list(self):
-        Logger.info(f"{self}: get handles id list")
-        return self._driver.window_handles
-
     def scroll_page_down(self):
         Logger.info(f"{self}: page scroll down")
         self.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -167,7 +159,7 @@ class Browser:
         return self.driver.current_url
 
     @property
-    def current_window_handle_id(self):
+    def current_window_handle(self):
         Logger.info(f"{self}: get currency handle  id")
         return self._driver.current_window_handle
 

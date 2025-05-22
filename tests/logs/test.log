@@ -1,0 +1,742 @@
+[2025-05-07 13:43:49,742 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][17]]: wait for presence_of_element_located
+[2025-05-07 13:43:49,751 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][17]] element is exists
+[2025-05-07 13:43:49,751 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][18]]: wait for presence_of_element_located
+[2025-05-07 13:43:49,757 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][18]] element is exists
+[2025-05-07 13:43:49,757 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][19]]: wait for presence_of_element_located
+[2025-05-07 13:43:49,762 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][19]] element is exists
+[2025-05-07 13:43:49,767 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][20]]: wait for presence_of_element_located
+[2025-05-07 13:43:49,772 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][20]] element is exists
+[2025-05-07 13:43:49,772 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][21]]: wait for presence_of_element_located
+[2025-05-07 13:43:49,777 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][21]] element is exists
+[2025-05-07 13:43:49,777 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][22]]: wait for presence_of_element_located
+[2025-05-07 13:43:49,780 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][22]] element is exists
+[2025-05-07 13:43:49,781 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][23]]: wait for presence_of_element_located
+[2025-05-07 13:43:49,784 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][23]] element is exists
+[2025-05-07 13:43:49,784 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][24]]: wait for presence_of_element_located
+[2025-05-07 13:43:49,787 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][24]] element is exists
+[2025-05-07 13:43:49,787 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][25]]: wait for presence_of_element_located
+[2025-05-07 13:43:49,791 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][25]] element is exists
+[2025-05-07 13:43:49,791 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][26]]: wait for presence_of_element_located
+[2025-05-07 13:43:49,795 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][26]] element is exists
+[2025-05-07 13:43:49,795 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][27]]: wait for presence_of_element_located
+[2025-05-07 13:43:49,798 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][27]] element is exists
+[2025-05-07 13:43:49,798 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][28]]: wait for presence_of_element_located
+[2025-05-07 13:43:49,806 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][28]] element is exists
+[2025-05-07 13:43:49,806 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][29]]: wait for presence_of_element_located
+[2025-05-07 13:44:00,259 - INFO] Browser[15dc1f808588b88e9ee514c9fdf850cb]: quit
+[2025-05-07 13:52:16,271 - INFO] Browser[f6495439c44bb8baa813ecc1c790caff]: get http://the-internet.herokuapp.com/infinite_scroll
+[2025-05-07 13:52:17,964 - INFO] ScrollPage[ScrollPage]: wait for open
+[2025-05-07 13:52:17,964 - INFO] Label[//*[@id='content']//*[contains(text(), 'Infinite Scroll')]]: wait for presence_of_element_located
+[2025-05-07 13:52:17,975 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]]: wait for presence_of_element_located
+[2025-05-07 13:52:17,983 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]] element is exists
+[2025-05-07 13:52:17,984 - INFO] WebElement[//div[contains(@class, 'jscroll-inner'')]]: wait for presence_of_element_located
+[2025-05-07 13:52:18,193 - INFO] Browser[f6495439c44bb8baa813ecc1c790caff]: quit
+[2025-05-07 13:53:06,380 - INFO] Browser[b45d5fe092e955cdf5ca7e1fa9ceb94d]: get http://the-internet.herokuapp.com/infinite_scroll
+[2025-05-07 13:53:07,974 - INFO] ScrollPage[ScrollPage]: wait for open
+[2025-05-07 13:53:07,974 - INFO] Label[//*[@id='content']//*[contains(text(), 'Infinite Scroll')]]: wait for presence_of_element_located
+[2025-05-07 13:53:07,984 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]]: wait for presence_of_element_located
+[2025-05-07 13:53:07,993 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]] element is exists
+[2025-05-07 13:53:07,993 - INFO] WebElement[//div[contains(@class, 'jscroll-inner'')]]: wait for presence_of_element_located
+[2025-05-07 13:53:08,161 - INFO] Browser[b45d5fe092e955cdf5ca7e1fa9ceb94d]: quit
+[2025-05-07 13:53:45,930 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: get http://the-internet.herokuapp.com/infinite_scroll
+[2025-05-07 13:53:48,701 - INFO] ScrollPage[ScrollPage]: wait for open
+[2025-05-07 13:53:48,701 - INFO] Label[//*[@id='content']//*[contains(text(), 'Infinite Scroll')]]: wait for presence_of_element_located
+[2025-05-07 13:53:48,711 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]]: wait for presence_of_element_located
+[2025-05-07 13:53:48,721 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]] element is exists
+[2025-05-07 13:53:48,721 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:48,731 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:48,738 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div class="j...'
+[2025-05-07 13:53:48,739 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]]: wait for visibility_of_element_located
+[2025-05-07 13:53:49,268 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]]: scroll to element 
+[2025-05-07 13:53:49,268 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.13")>,)'
+[2025-05-07 13:53:49,272 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][2]]: wait for presence_of_element_located
+[2025-05-07 13:53:49,280 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][2]] element is exists
+[2025-05-07 13:53:49,280 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:49,285 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:49,289 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:49,289 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][2]]: wait for visibility_of_element_located
+[2025-05-07 13:53:49,296 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][2]]: scroll to element 
+[2025-05-07 13:53:49,296 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.14")>,)'
+[2025-05-07 13:53:49,300 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][3]]: wait for presence_of_element_located
+[2025-05-07 13:53:49,307 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][3]] element is exists
+[2025-05-07 13:53:49,307 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:49,311 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:49,314 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:49,314 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][3]]: wait for visibility_of_element_located
+[2025-05-07 13:53:49,849 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][3]]: scroll to element 
+[2025-05-07 13:53:49,849 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.16")>,)'
+[2025-05-07 13:53:49,855 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][4]]: wait for presence_of_element_located
+[2025-05-07 13:53:49,862 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][4]] element is exists
+[2025-05-07 13:53:49,862 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:49,867 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:49,871 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:49,871 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][4]]: wait for visibility_of_element_located
+[2025-05-07 13:53:50,391 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][4]]: scroll to element 
+[2025-05-07 13:53:50,391 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.18")>,)'
+[2025-05-07 13:53:50,398 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][5]]: wait for presence_of_element_located
+[2025-05-07 13:53:50,410 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][5]] element is exists
+[2025-05-07 13:53:50,411 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:50,418 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:50,423 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:50,424 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][5]]: wait for visibility_of_element_located
+[2025-05-07 13:53:50,958 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][5]]: scroll to element 
+[2025-05-07 13:53:50,958 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.20")>,)'
+[2025-05-07 13:53:50,963 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][6]]: wait for presence_of_element_located
+[2025-05-07 13:53:50,971 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][6]] element is exists
+[2025-05-07 13:53:50,971 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:50,975 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:50,978 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:50,978 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][6]]: wait for visibility_of_element_located
+[2025-05-07 13:53:51,512 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][6]]: scroll to element 
+[2025-05-07 13:53:51,512 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.22")>,)'
+[2025-05-07 13:53:51,518 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][7]]: wait for presence_of_element_located
+[2025-05-07 13:53:51,525 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][7]] element is exists
+[2025-05-07 13:53:51,525 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:51,530 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:51,533 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:51,534 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][7]]: wait for visibility_of_element_located
+[2025-05-07 13:53:52,066 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][7]]: scroll to element 
+[2025-05-07 13:53:52,067 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.24")>,)'
+[2025-05-07 13:53:52,071 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][8]]: wait for presence_of_element_located
+[2025-05-07 13:53:52,079 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][8]] element is exists
+[2025-05-07 13:53:52,079 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:52,084 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:52,087 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:52,088 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][8]]: wait for visibility_of_element_located
+[2025-05-07 13:53:52,621 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][8]]: scroll to element 
+[2025-05-07 13:53:52,621 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.26")>,)'
+[2025-05-07 13:53:52,625 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][9]]: wait for presence_of_element_located
+[2025-05-07 13:53:52,633 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][9]] element is exists
+[2025-05-07 13:53:52,633 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:52,637 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:52,640 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:52,641 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][9]]: wait for visibility_of_element_located
+[2025-05-07 13:53:53,173 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][9]]: scroll to element 
+[2025-05-07 13:53:53,173 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.28")>,)'
+[2025-05-07 13:53:53,179 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][10]]: wait for presence_of_element_located
+[2025-05-07 13:53:53,186 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][10]] element is exists
+[2025-05-07 13:53:53,186 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:53,190 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:53,194 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:53,195 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][10]]: wait for visibility_of_element_located
+[2025-05-07 13:53:53,730 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][10]]: scroll to element 
+[2025-05-07 13:53:53,730 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.30")>,)'
+[2025-05-07 13:53:53,738 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][11]]: wait for presence_of_element_located
+[2025-05-07 13:53:53,747 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][11]] element is exists
+[2025-05-07 13:53:53,747 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:53,750 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:53,754 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:53,755 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][11]]: wait for visibility_of_element_located
+[2025-05-07 13:53:54,284 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][11]]: scroll to element 
+[2025-05-07 13:53:54,284 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.32")>,)'
+[2025-05-07 13:53:54,292 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][12]]: wait for presence_of_element_located
+[2025-05-07 13:53:54,301 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][12]] element is exists
+[2025-05-07 13:53:54,301 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:54,305 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:54,310 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:54,311 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][12]]: wait for visibility_of_element_located
+[2025-05-07 13:53:54,846 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][12]]: scroll to element 
+[2025-05-07 13:53:54,846 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.34")>,)'
+[2025-05-07 13:53:54,857 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][13]]: wait for presence_of_element_located
+[2025-05-07 13:53:54,867 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][13]] element is exists
+[2025-05-07 13:53:54,867 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:54,872 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:54,876 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:54,877 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][13]]: wait for visibility_of_element_located
+[2025-05-07 13:53:55,413 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][13]]: scroll to element 
+[2025-05-07 13:53:55,413 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.36")>,)'
+[2025-05-07 13:53:55,420 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][14]]: wait for presence_of_element_located
+[2025-05-07 13:53:55,428 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][14]] element is exists
+[2025-05-07 13:53:55,428 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:55,432 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:55,436 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:55,437 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][14]]: wait for visibility_of_element_located
+[2025-05-07 13:53:55,962 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][14]]: scroll to element 
+[2025-05-07 13:53:55,963 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.38")>,)'
+[2025-05-07 13:53:55,967 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][15]]: wait for presence_of_element_located
+[2025-05-07 13:53:55,975 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][15]] element is exists
+[2025-05-07 13:53:55,976 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:55,980 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:55,984 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:55,985 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][15]]: wait for visibility_of_element_located
+[2025-05-07 13:53:56,501 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][15]]: scroll to element 
+[2025-05-07 13:53:56,501 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.40")>,)'
+[2025-05-07 13:53:56,506 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][16]]: wait for presence_of_element_located
+[2025-05-07 13:53:56,513 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][16]] element is exists
+[2025-05-07 13:53:56,513 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:56,517 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:56,521 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:56,522 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][16]]: wait for visibility_of_element_located
+[2025-05-07 13:53:57,056 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][16]]: scroll to element 
+[2025-05-07 13:53:57,056 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.42")>,)'
+[2025-05-07 13:53:57,061 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][17]]: wait for presence_of_element_located
+[2025-05-07 13:53:57,069 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][17]] element is exists
+[2025-05-07 13:53:57,069 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:57,073 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:57,077 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:57,078 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][17]]: wait for visibility_of_element_located
+[2025-05-07 13:53:57,608 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][17]]: scroll to element 
+[2025-05-07 13:53:57,608 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.44")>,)'
+[2025-05-07 13:53:57,612 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][18]]: wait for presence_of_element_located
+[2025-05-07 13:53:57,620 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][18]] element is exists
+[2025-05-07 13:53:57,620 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:57,624 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:57,628 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:57,629 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][18]]: wait for visibility_of_element_located
+[2025-05-07 13:53:58,164 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][18]]: scroll to element 
+[2025-05-07 13:53:58,164 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.46")>,)'
+[2025-05-07 13:53:58,167 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][19]]: wait for presence_of_element_located
+[2025-05-07 13:53:58,176 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][19]] element is exists
+[2025-05-07 13:53:58,176 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:58,181 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:58,185 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:58,186 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][19]]: wait for visibility_of_element_located
+[2025-05-07 13:53:58,712 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][19]]: scroll to element 
+[2025-05-07 13:53:58,712 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.48")>,)'
+[2025-05-07 13:53:58,717 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][20]]: wait for presence_of_element_located
+[2025-05-07 13:53:58,724 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][20]] element is exists
+[2025-05-07 13:53:58,725 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:58,729 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:58,733 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:58,737 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][20]]: wait for visibility_of_element_located
+[2025-05-07 13:53:59,275 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][20]]: scroll to element 
+[2025-05-07 13:53:59,275 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.50")>,)'
+[2025-05-07 13:53:59,280 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][21]]: wait for presence_of_element_located
+[2025-05-07 13:53:59,288 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][21]] element is exists
+[2025-05-07 13:53:59,288 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:59,292 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:59,296 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:59,297 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][21]]: wait for visibility_of_element_located
+[2025-05-07 13:53:59,834 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][21]]: scroll to element 
+[2025-05-07 13:53:59,834 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.52")>,)'
+[2025-05-07 13:53:59,841 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][22]]: wait for presence_of_element_located
+[2025-05-07 13:53:59,849 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][22]] element is exists
+[2025-05-07 13:53:59,850 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:53:59,854 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:53:59,859 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:53:59,860 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][22]]: wait for visibility_of_element_located
+[2025-05-07 13:54:00,396 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][22]]: scroll to element 
+[2025-05-07 13:54:00,396 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.54")>,)'
+[2025-05-07 13:54:00,403 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][23]]: wait for presence_of_element_located
+[2025-05-07 13:54:00,415 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][23]] element is exists
+[2025-05-07 13:54:00,415 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:00,420 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:00,424 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:00,425 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][23]]: wait for visibility_of_element_located
+[2025-05-07 13:54:00,950 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][23]]: scroll to element 
+[2025-05-07 13:54:00,950 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.56")>,)'
+[2025-05-07 13:54:00,956 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][24]]: wait for presence_of_element_located
+[2025-05-07 13:54:00,964 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][24]] element is exists
+[2025-05-07 13:54:00,965 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:00,970 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:00,975 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:00,977 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][24]]: wait for visibility_of_element_located
+[2025-05-07 13:54:01,551 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][24]]: scroll to element 
+[2025-05-07 13:54:01,551 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="3025b978fb4254b954797df63c878fe8", element="f.D750762FB8CEA5D4DBA467BD78E1695A.d.5ADABBD74DF0322386EE39E31A394D66.e.58")>,)'
+[2025-05-07 13:54:01,555 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][25]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,563 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][25]] element is exists
+[2025-05-07 13:54:01,564 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,568 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:01,573 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:01,574 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,578 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]] element is exists
+[2025-05-07 13:54:01,578 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][2]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,582 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][2]] element is exists
+[2025-05-07 13:54:01,582 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][3]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,586 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][3]] element is exists
+[2025-05-07 13:54:01,586 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][4]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,589 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][4]] element is exists
+[2025-05-07 13:54:01,589 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][5]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,593 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][5]] element is exists
+[2025-05-07 13:54:01,593 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][6]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,596 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][6]] element is exists
+[2025-05-07 13:54:01,596 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][7]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,600 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][7]] element is exists
+[2025-05-07 13:54:01,600 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][8]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,603 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][8]] element is exists
+[2025-05-07 13:54:01,604 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][9]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,607 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][9]] element is exists
+[2025-05-07 13:54:01,607 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][10]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,610 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][10]] element is exists
+[2025-05-07 13:54:01,610 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][11]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,614 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][11]] element is exists
+[2025-05-07 13:54:01,614 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][12]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,617 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][12]] element is exists
+[2025-05-07 13:54:01,617 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][13]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,621 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][13]] element is exists
+[2025-05-07 13:54:01,621 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][14]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,624 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][14]] element is exists
+[2025-05-07 13:54:01,624 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][15]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,628 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][15]] element is exists
+[2025-05-07 13:54:01,628 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][16]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,631 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][16]] element is exists
+[2025-05-07 13:54:01,632 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][17]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,635 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][17]] element is exists
+[2025-05-07 13:54:01,636 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][18]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,640 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][18]] element is exists
+[2025-05-07 13:54:01,640 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][19]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,644 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][19]] element is exists
+[2025-05-07 13:54:01,644 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][20]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,649 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][20]] element is exists
+[2025-05-07 13:54:01,649 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][21]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,653 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][21]] element is exists
+[2025-05-07 13:54:01,654 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][22]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,658 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][22]] element is exists
+[2025-05-07 13:54:01,658 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][23]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,661 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][23]] element is exists
+[2025-05-07 13:54:01,662 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][24]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,665 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][24]] element is exists
+[2025-05-07 13:54:01,665 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][25]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,671 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][25]] element is exists
+[2025-05-07 13:54:01,671 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][26]]: wait for presence_of_element_located
+[2025-05-07 13:54:01,678 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][26]] element is exists
+[2025-05-07 13:54:01,679 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][27]]: wait for presence_of_element_located
+[2025-05-07 13:54:06,938 - INFO] Browser[3025b978fb4254b954797df63c878fe8]: quit
+[2025-05-07 13:54:39,313 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: get http://the-internet.herokuapp.com/infinite_scroll
+[2025-05-07 13:54:40,995 - INFO] ScrollPage[ScrollPage]: wait for open
+[2025-05-07 13:54:40,995 - INFO] Label[//*[@id='content']//*[contains(text(), 'Infinite Scroll')]]: wait for presence_of_element_located
+[2025-05-07 13:54:41,007 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]]: wait for presence_of_element_located
+[2025-05-07 13:54:41,016 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]] element is exists
+[2025-05-07 13:54:41,017 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:41,027 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:41,033 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div class="j...'
+[2025-05-07 13:54:41,034 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]]: wait for visibility_of_element_located
+[2025-05-07 13:54:41,568 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][1]]: scroll to element 
+[2025-05-07 13:54:41,568 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.13")>,)'
+[2025-05-07 13:54:41,572 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][2]]: wait for presence_of_element_located
+[2025-05-07 13:54:41,579 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][2]] element is exists
+[2025-05-07 13:54:41,579 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:41,583 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:41,586 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:41,587 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][2]]: wait for visibility_of_element_located
+[2025-05-07 13:54:41,594 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][2]]: scroll to element 
+[2025-05-07 13:54:41,594 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.14")>,)'
+[2025-05-07 13:54:41,598 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][3]]: wait for presence_of_element_located
+[2025-05-07 13:54:41,606 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][3]] element is exists
+[2025-05-07 13:54:41,606 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:41,610 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:41,613 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:41,613 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][3]]: wait for visibility_of_element_located
+[2025-05-07 13:54:42,146 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][3]]: scroll to element 
+[2025-05-07 13:54:42,147 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.16")>,)'
+[2025-05-07 13:54:42,152 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][4]]: wait for presence_of_element_located
+[2025-05-07 13:54:42,160 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][4]] element is exists
+[2025-05-07 13:54:42,161 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:42,165 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:42,168 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:42,168 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][4]]: wait for visibility_of_element_located
+[2025-05-07 13:54:42,687 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][4]]: scroll to element 
+[2025-05-07 13:54:42,687 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.18")>,)'
+[2025-05-07 13:54:42,694 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][5]]: wait for presence_of_element_located
+[2025-05-07 13:54:42,706 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][5]] element is exists
+[2025-05-07 13:54:42,706 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:42,713 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:42,719 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:42,720 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][5]]: wait for visibility_of_element_located
+[2025-05-07 13:54:43,260 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][5]]: scroll to element 
+[2025-05-07 13:54:43,260 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.20")>,)'
+[2025-05-07 13:54:43,267 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][6]]: wait for presence_of_element_located
+[2025-05-07 13:54:43,275 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][6]] element is exists
+[2025-05-07 13:54:43,275 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:43,279 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:43,282 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:43,282 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][6]]: wait for visibility_of_element_located
+[2025-05-07 13:54:43,817 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][6]]: scroll to element 
+[2025-05-07 13:54:43,817 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.22")>,)'
+[2025-05-07 13:54:43,828 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][7]]: wait for presence_of_element_located
+[2025-05-07 13:54:43,836 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][7]] element is exists
+[2025-05-07 13:54:43,837 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:43,842 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:43,845 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:43,845 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][7]]: wait for visibility_of_element_located
+[2025-05-07 13:54:44,375 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][7]]: scroll to element 
+[2025-05-07 13:54:44,376 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.24")>,)'
+[2025-05-07 13:54:44,383 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][8]]: wait for presence_of_element_located
+[2025-05-07 13:54:44,392 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][8]] element is exists
+[2025-05-07 13:54:44,392 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:44,397 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:44,401 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:44,401 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][8]]: wait for visibility_of_element_located
+[2025-05-07 13:54:44,936 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][8]]: scroll to element 
+[2025-05-07 13:54:44,937 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.26")>,)'
+[2025-05-07 13:54:44,944 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][9]]: wait for presence_of_element_located
+[2025-05-07 13:54:44,951 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][9]] element is exists
+[2025-05-07 13:54:44,951 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:44,955 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:44,959 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:44,959 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][9]]: wait for visibility_of_element_located
+[2025-05-07 13:54:45,487 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][9]]: scroll to element 
+[2025-05-07 13:54:45,487 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.28")>,)'
+[2025-05-07 13:54:45,493 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][10]]: wait for presence_of_element_located
+[2025-05-07 13:54:45,500 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][10]] element is exists
+[2025-05-07 13:54:45,501 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:45,504 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:45,508 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:45,508 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][10]]: wait for visibility_of_element_located
+[2025-05-07 13:54:46,046 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][10]]: scroll to element 
+[2025-05-07 13:54:46,046 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.30")>,)'
+[2025-05-07 13:54:46,054 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][11]]: wait for presence_of_element_located
+[2025-05-07 13:54:46,060 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][11]] element is exists
+[2025-05-07 13:54:46,060 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:46,065 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:46,070 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:46,071 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][11]]: wait for visibility_of_element_located
+[2025-05-07 13:54:46,600 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][11]]: scroll to element 
+[2025-05-07 13:54:46,601 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.32")>,)'
+[2025-05-07 13:54:46,607 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][12]]: wait for presence_of_element_located
+[2025-05-07 13:54:46,618 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][12]] element is exists
+[2025-05-07 13:54:46,618 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:46,624 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:46,627 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:46,628 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][12]]: wait for visibility_of_element_located
+[2025-05-07 13:54:47,168 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][12]]: scroll to element 
+[2025-05-07 13:54:47,168 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.34")>,)'
+[2025-05-07 13:54:47,178 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][13]]: wait for presence_of_element_located
+[2025-05-07 13:54:47,188 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][13]] element is exists
+[2025-05-07 13:54:47,188 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:47,192 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:47,195 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:47,196 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][13]]: wait for visibility_of_element_located
+[2025-05-07 13:54:47,727 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][13]]: scroll to element 
+[2025-05-07 13:54:47,727 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.36")>,)'
+[2025-05-07 13:54:47,731 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][14]]: wait for presence_of_element_located
+[2025-05-07 13:54:47,739 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][14]] element is exists
+[2025-05-07 13:54:47,740 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:47,743 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:47,747 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:47,748 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][14]]: wait for visibility_of_element_located
+[2025-05-07 13:54:48,283 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][14]]: scroll to element 
+[2025-05-07 13:54:48,283 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.38")>,)'
+[2025-05-07 13:54:48,293 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][15]]: wait for presence_of_element_located
+[2025-05-07 13:54:48,302 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][15]] element is exists
+[2025-05-07 13:54:48,302 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:48,305 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:48,309 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:48,310 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][15]]: wait for visibility_of_element_located
+[2025-05-07 13:54:48,843 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][15]]: scroll to element 
+[2025-05-07 13:54:48,844 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.40")>,)'
+[2025-05-07 13:54:48,851 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][16]]: wait for presence_of_element_located
+[2025-05-07 13:54:48,859 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][16]] element is exists
+[2025-05-07 13:54:48,859 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:48,864 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:48,867 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:48,868 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][16]]: wait for visibility_of_element_located
+[2025-05-07 13:54:49,390 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][16]]: scroll to element 
+[2025-05-07 13:54:49,390 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.42")>,)'
+[2025-05-07 13:54:49,396 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][17]]: wait for presence_of_element_located
+[2025-05-07 13:54:49,405 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][17]] element is exists
+[2025-05-07 13:54:49,405 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:49,411 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:49,417 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:49,419 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][17]]: wait for visibility_of_element_located
+[2025-05-07 13:54:49,948 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][17]]: scroll to element 
+[2025-05-07 13:54:49,948 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.44")>,)'
+[2025-05-07 13:54:49,953 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][18]]: wait for presence_of_element_located
+[2025-05-07 13:54:49,961 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][18]] element is exists
+[2025-05-07 13:54:49,962 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:49,966 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:49,971 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:49,972 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][18]]: wait for visibility_of_element_located
+[2025-05-07 13:54:50,490 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][18]]: scroll to element 
+[2025-05-07 13:54:50,490 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.46")>,)'
+[2025-05-07 13:54:50,496 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][19]]: wait for presence_of_element_located
+[2025-05-07 13:54:50,505 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][19]] element is exists
+[2025-05-07 13:54:50,505 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:50,510 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:50,516 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:50,518 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][19]]: wait for visibility_of_element_located
+[2025-05-07 13:54:51,053 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][19]]: scroll to element 
+[2025-05-07 13:54:51,053 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.48")>,)'
+[2025-05-07 13:54:51,059 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][20]]: wait for presence_of_element_located
+[2025-05-07 13:54:51,070 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][20]] element is exists
+[2025-05-07 13:54:51,071 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:51,077 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:51,084 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:51,087 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][20]]: wait for visibility_of_element_located
+[2025-05-07 13:54:51,613 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][20]]: scroll to element 
+[2025-05-07 13:54:51,613 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.50")>,)'
+[2025-05-07 13:54:51,618 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][21]]: wait for presence_of_element_located
+[2025-05-07 13:54:51,627 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][21]] element is exists
+[2025-05-07 13:54:51,627 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:51,632 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:51,637 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:51,638 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][21]]: wait for visibility_of_element_located
+[2025-05-07 13:54:52,175 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][21]]: scroll to element 
+[2025-05-07 13:54:52,175 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.52")>,)'
+[2025-05-07 13:54:52,183 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][22]]: wait for presence_of_element_located
+[2025-05-07 13:54:52,193 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][22]] element is exists
+[2025-05-07 13:54:52,194 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:52,202 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:52,207 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:52,208 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][22]]: wait for visibility_of_element_located
+[2025-05-07 13:54:52,738 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][22]]: scroll to element 
+[2025-05-07 13:54:52,738 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.54")>,)'
+[2025-05-07 13:54:52,745 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][23]]: wait for presence_of_element_located
+[2025-05-07 13:54:52,755 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][23]] element is exists
+[2025-05-07 13:54:52,756 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:52,761 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:52,767 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:52,768 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][23]]: wait for visibility_of_element_located
+[2025-05-07 13:54:53,306 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][23]]: scroll to element 
+[2025-05-07 13:54:53,307 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.56")>,)'
+[2025-05-07 13:54:53,311 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][24]]: wait for presence_of_element_located
+[2025-05-07 13:54:53,320 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][24]] element is exists
+[2025-05-07 13:54:53,320 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:53,323 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:53,328 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:53,329 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][24]]: wait for visibility_of_element_located
+[2025-05-07 13:54:53,855 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][24]]: scroll to element 
+[2025-05-07 13:54:53,855 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: execute script = 'arguments[0].scrollIntoView();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="129fb340e863c295c24df0e14a958c95", element="f.A3C2C22A57841C6C1D56253EE1B6187B.d.BD191938566D22C7AC12A3CF010628F9.e.58")>,)'
+[2025-05-07 13:54:53,863 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][25]]: wait for presence_of_element_located
+[2025-05-07 13:54:53,872 - INFO] WebElement[(//div[contains(@class, 'jscroll-inner')]//div)['i'][25]] element is exists
+[2025-05-07 13:54:53,872 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:53,876 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:53,881 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:53,882 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: wait for presence_of_element_located
+[2025-05-07 13:54:53,885 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: get attribute 'innerHTML'
+[2025-05-07 13:54:53,890 - INFO] WebElement[//div[contains(@class, 'jscroll-inner')]]: attribute 'innerHTML' = '<div cla...'
+[2025-05-07 13:54:53,896 - INFO] Browser[129fb340e863c295c24df0e14a958c95]: quit
+[2025-05-07 14:00:50,569 - INFO] Browser[bff281df7a465a9513602587da6b8492]: get http://the-internet.herokuapp.com/windows
+[2025-05-07 14:00:52,271 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:00:52,271 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:00:52,282 - INFO] 
+
+    ======================== Open first page ==========================    
+
+
+[2025-05-07 14:00:52,283 - INFO] Button[//a[contains(text(), 'Click Here')]]: wait for element_to_be_clickable
+[2025-05-07 14:00:52,311 - INFO] Button[//a[contains(text(), 'Click Here')]]: click
+[2025-05-07 14:00:52,402 - INFO] Browser[bff281df7a465a9513602587da6b8492]: get currency handle  id
+[2025-05-07 14:00:52,404 - INFO] Browser[bff281df7a465a9513602587da6b8492]: switch to window with handle '3A4279746A19B85C3F2AF01961DBBC89'
+[2025-05-07 14:00:52,435 - INFO] Browser[bff281df7a465a9513602587da6b8492]: new window handle = '3A4279746A19B85C3F2AF01961DBBC89'
+[2025-05-07 14:00:52,435 - INFO] NewTabHandlersPage[NewTabHandlersPage]: wait for open
+[2025-05-07 14:00:52,435 - INFO] Label[//div//*[contains(text(), 'New Window')]]: wait for presence_of_element_located
+[2025-05-07 14:01:02,848 - INFO] Browser[bff281df7a465a9513602587da6b8492]: quit
+[2025-05-07 14:01:56,653 - INFO] Browser[435576a5ea07efe9c2270d0428b9fd24]: get http://the-internet.herokuapp.com/windows
+[2025-05-07 14:01:58,362 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:01:58,362 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:01:58,371 - INFO] 
+
+    ======================== Open first page ==========================    
+
+
+[2025-05-07 14:01:58,372 - INFO] Button[//a[contains(text(), 'Click Here')]]: wait for element_to_be_clickable
+[2025-05-07 14:01:58,394 - INFO] Button[//a[contains(text(), 'Click Here')]]: click
+[2025-05-07 14:01:58,480 - INFO] Browser[435576a5ea07efe9c2270d0428b9fd24]: get currency handle  id
+[2025-05-07 14:01:58,482 - INFO] Browser[435576a5ea07efe9c2270d0428b9fd24]: switch to window with handle '934B9EABC55453CBF9D1EDE2C5E7E97A'
+[2025-05-07 14:01:58,516 - INFO] Browser[435576a5ea07efe9c2270d0428b9fd24]: new window handle = '934B9EABC55453CBF9D1EDE2C5E7E97A'
+[2025-05-07 14:01:58,516 - INFO] NewTabHandlersPage[NewTabHandlersPage]: wait for open
+[2025-05-07 14:01:58,516 - INFO] Label[//div//*[contains(text(), 'New Window')]]: wait for presence_of_element_located
+[2025-05-07 14:02:07,407 - INFO] Browser[435576a5ea07efe9c2270d0428b9fd24]: quit
+[2025-05-07 14:03:20,288 - INFO] Browser[9999bad5a9d53dbec8879e1049d8e973]: get http://the-internet.herokuapp.com/windows
+[2025-05-07 14:03:21,938 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:03:21,938 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:03:21,948 - INFO] 
+
+    ======================== Open first page ==========================    
+
+
+[2025-05-07 14:03:21,949 - INFO] Button[//a[contains(text(), 'Click Here')]]: wait for element_to_be_clickable
+[2025-05-07 14:03:21,972 - INFO] Button[//a[contains(text(), 'Click Here')]]: click
+[2025-05-07 14:03:22,058 - INFO] Browser[9999bad5a9d53dbec8879e1049d8e973]: get currency handle  id
+[2025-05-07 14:03:22,061 - INFO] Browser[9999bad5a9d53dbec8879e1049d8e973]: switch to window with handle '6482FB770BBF62D3A500A8D968703C17'
+[2025-05-07 14:03:22,095 - INFO] Browser[9999bad5a9d53dbec8879e1049d8e973]: new window handle = '6482FB770BBF62D3A500A8D968703C17'
+[2025-05-07 14:03:22,095 - INFO] NewTabHandlersPage[NewTabHandlersPage]: wait for open
+[2025-05-07 14:03:22,095 - INFO] Label[//div//*[contains(text(), 'New Window')]]: wait for presence_of_element_located
+[2025-05-07 14:03:31,498 - INFO] Browser[9999bad5a9d53dbec8879e1049d8e973]: quit
+[2025-05-07 14:03:47,219 - INFO] Browser[a6356045e771f8dbf3f6f98f2922cd30]: get http://the-internet.herokuapp.com/windows
+[2025-05-07 14:03:48,885 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:03:48,886 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:03:48,899 - INFO] 
+
+    ======================== Open first page ==========================    
+
+
+[2025-05-07 14:03:48,899 - INFO] Button[//a[contains(text(), 'Click Here')]]: wait for element_to_be_clickable
+[2025-05-07 14:03:48,932 - INFO] Button[//a[contains(text(), 'Click Here')]]: click
+[2025-05-07 14:03:49,032 - INFO] Browser[a6356045e771f8dbf3f6f98f2922cd30]: get currency handle  id
+[2025-05-07 14:03:49,034 - INFO] Browser[a6356045e771f8dbf3f6f98f2922cd30]: switch to window with handle 'F183A917CD341CA9D0F1A91ACDE7A590'
+[2025-05-07 14:03:49,060 - INFO] Browser[a6356045e771f8dbf3f6f98f2922cd30]: new window handle = 'F183A917CD341CA9D0F1A91ACDE7A590'
+[2025-05-07 14:03:49,061 - INFO] NewTabHandlersPage[NewTabHandlersPage]: wait for open
+[2025-05-07 14:03:49,061 - INFO] Label[//div//*[contains(text(), 'New Window')]]: wait for presence_of_element_located
+[2025-05-07 14:03:51,794 - INFO] Browser[a6356045e771f8dbf3f6f98f2922cd30]: quit
+[2025-05-07 14:07:20,209 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: get http://the-internet.herokuapp.com/windows
+[2025-05-07 14:07:21,876 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:07:21,876 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:07:21,888 - INFO] 
+
+    ======================== Open first page ==========================    
+
+
+[2025-05-07 14:07:21,888 - INFO] Button[//a[contains(text(), 'Click Here')]]: wait for element_to_be_clickable
+[2025-05-07 14:07:21,913 - INFO] Button[//a[contains(text(), 'Click Here')]]: click
+[2025-05-07 14:07:22,001 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: get all browser window handles
+[2025-05-07 14:07:22,018 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: switch to window with handle '7A7B46581CADC08411487336EC772B4A'
+[2025-05-07 14:07:22,064 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: new window handle = '7A7B46581CADC08411487336EC772B4A'
+[2025-05-07 14:07:22,065 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: get currency handle  id
+[2025-05-07 14:07:22,067 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: switch to window with handle '7A7B46581CADC08411487336EC772B4A'
+[2025-05-07 14:07:22,098 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: new window handle = '7A7B46581CADC08411487336EC772B4A'
+[2025-05-07 14:07:22,098 - INFO] NewTabHandlersPage[NewTabHandlersPage]: wait for open
+[2025-05-07 14:07:22,098 - INFO] Label[//div//*[contains(text(), 'New Window')]]: wait for presence_of_element_located
+[2025-05-07 14:07:22,126 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: get window title
+[2025-05-07 14:07:22,130 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: switch to default window
+[2025-05-07 14:07:22,138 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:07:22,138 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:07:22,146 - INFO] 
+
+    ======================== Open second page ==========================    
+
+
+[2025-05-07 14:07:22,146 - INFO] Button[//a[contains(text(), 'Click Here')]]: wait for element_to_be_clickable
+[2025-05-07 14:07:22,162 - INFO] Button[//a[contains(text(), 'Click Here')]]: click
+[2025-05-07 14:07:22,210 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: get all browser window handles
+[2025-05-07 14:07:22,223 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: switch to window with handle '49FD690F00F5C1D66DF7D5F25A359327'
+[2025-05-07 14:07:22,257 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: new window handle = '49FD690F00F5C1D66DF7D5F25A359327'
+[2025-05-07 14:07:22,257 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: get currency handle  id
+[2025-05-07 14:07:22,258 - INFO] NewTabHandlersPage[NewTabHandlersPage]: wait for open
+[2025-05-07 14:07:22,258 - INFO] Label[//div//*[contains(text(), 'New Window')]]: wait for presence_of_element_located
+[2025-05-07 14:07:22,341 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: get window title
+[2025-05-07 14:07:22,345 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: switch to default window
+[2025-05-07 14:07:22,352 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:07:22,353 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:07:22,362 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: switch to window with handle '7A7B46581CADC08411487336EC772B4A'
+[2025-05-07 14:07:22,376 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: new window handle = '7A7B46581CADC08411487336EC772B4A'
+[2025-05-07 14:07:22,377 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: close window handle '7A7B46581CADC08411487336EC772B4A'
+[2025-05-07 14:07:22,432 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: switch to default window
+[2025-05-07 14:07:22,537 - INFO] Browser[b5d1f488ef70ba04b457e9dc382f753c]: quit
+[2025-05-07 14:08:17,713 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: get http://the-internet.herokuapp.com/windows
+[2025-05-07 14:08:19,399 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:08:19,399 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:08:19,413 - INFO] 
+
+    ======================== Open first page ==========================    
+
+
+[2025-05-07 14:08:19,413 - INFO] Button[//a[contains(text(), 'Click Here')]]: wait for element_to_be_clickable
+[2025-05-07 14:08:19,446 - INFO] Button[//a[contains(text(), 'Click Here')]]: click
+[2025-05-07 14:08:19,553 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: get all browser window handles
+[2025-05-07 14:08:19,570 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: switch to window with handle '8AE8971B88169212C28BA21EF2382C66'
+[2025-05-07 14:08:19,603 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: new window handle = '8AE8971B88169212C28BA21EF2382C66'
+[2025-05-07 14:08:19,604 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: get currency handle  id
+[2025-05-07 14:08:19,605 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: switch to window with handle '8AE8971B88169212C28BA21EF2382C66'
+[2025-05-07 14:08:19,630 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: new window handle = '8AE8971B88169212C28BA21EF2382C66'
+[2025-05-07 14:08:19,630 - INFO] NewTabHandlersPage[NewTabHandlersPage]: wait for open
+[2025-05-07 14:08:19,631 - INFO] Label[//div//*[contains(text(), 'New Window')]]: wait for presence_of_element_located
+[2025-05-07 14:08:19,684 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: get window title
+[2025-05-07 14:08:19,690 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: switch to default window
+[2025-05-07 14:08:19,697 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:08:19,698 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:08:19,708 - INFO] 
+
+    ======================== Open second page ==========================    
+
+
+[2025-05-07 14:08:19,709 - INFO] Button[//a[contains(text(), 'Click Here')]]: wait for element_to_be_clickable
+[2025-05-07 14:08:19,726 - INFO] Button[//a[contains(text(), 'Click Here')]]: click
+[2025-05-07 14:08:19,782 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: get all browser window handles
+[2025-05-07 14:08:19,796 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: switch to window with handle '0781A2A580C14BD853986CDB919748FF'
+[2025-05-07 14:08:19,831 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: new window handle = '0781A2A580C14BD853986CDB919748FF'
+[2025-05-07 14:08:19,831 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: get currency handle  id
+[2025-05-07 14:08:19,831 - INFO] NewTabHandlersPage[NewTabHandlersPage]: wait for open
+[2025-05-07 14:08:19,831 - INFO] Label[//div//*[contains(text(), 'New Window')]]: wait for presence_of_element_located
+[2025-05-07 14:08:19,913 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: get window title
+[2025-05-07 14:08:19,916 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: switch to default window
+[2025-05-07 14:08:19,928 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:08:19,928 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:08:19,937 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: switch to window with handle '8AE8971B88169212C28BA21EF2382C66'
+[2025-05-07 14:08:19,949 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: new window handle = '8AE8971B88169212C28BA21EF2382C66'
+[2025-05-07 14:08:19,950 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: close window handle '8AE8971B88169212C28BA21EF2382C66'
+[2025-05-07 14:08:20,014 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: switch to default window
+[2025-05-07 14:08:20,184 - INFO] Browser[715b61e224145dfcee8c3e40442b338d]: quit
+[2025-05-07 14:10:28,697 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: get http://the-internet.herokuapp.com/windows
+[2025-05-07 14:10:30,480 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:10:30,481 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:10:30,492 - INFO] 
+
+    ======================== Open first page ==========================    
+
+
+[2025-05-07 14:10:30,492 - INFO] Button[//a[contains(text(), 'Click Here')]]: wait for element_to_be_clickable
+[2025-05-07 14:10:30,519 - INFO] Button[//a[contains(text(), 'Click Here')]]: click
+[2025-05-07 14:10:30,612 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: get all browser window handles
+[2025-05-07 14:10:30,624 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: switch to window with handle '902ED652E1E531BF5D8439817F9C5EE8'
+[2025-05-07 14:10:30,660 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: new window handle = '902ED652E1E531BF5D8439817F9C5EE8'
+[2025-05-07 14:10:30,660 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: get currency handle  id
+[2025-05-07 14:10:30,662 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: switch to window with handle '902ED652E1E531BF5D8439817F9C5EE8'
+[2025-05-07 14:10:30,691 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: new window handle = '902ED652E1E531BF5D8439817F9C5EE8'
+[2025-05-07 14:10:30,691 - INFO] NewTabHandlersPage[NewTabHandlersPage]: wait for open
+[2025-05-07 14:10:30,691 - INFO] Label[//div//*[contains(text(), 'New Window')]]: wait for presence_of_element_located
+[2025-05-07 14:10:30,742 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: get window title
+[2025-05-07 14:10:30,748 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: switch to default window
+[2025-05-07 14:10:30,756 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:10:30,756 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:10:30,763 - INFO] 
+
+    ======================== Open second page ==========================    
+
+
+[2025-05-07 14:10:30,763 - INFO] Button[//a[contains(text(), 'Click Here')]]: wait for element_to_be_clickable
+[2025-05-07 14:10:30,781 - INFO] Button[//a[contains(text(), 'Click Here')]]: click
+[2025-05-07 14:10:30,832 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: get all browser window handles
+[2025-05-07 14:10:30,845 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: switch to window with handle '75C89773186045E0A5C2EEB00C14CAF0'
+[2025-05-07 14:10:30,880 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: new window handle = '75C89773186045E0A5C2EEB00C14CAF0'
+[2025-05-07 14:10:30,880 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: get currency handle  id
+[2025-05-07 14:10:30,881 - INFO] NewTabHandlersPage[NewTabHandlersPage]: wait for open
+[2025-05-07 14:10:30,881 - INFO] Label[//div//*[contains(text(), 'New Window')]]: wait for presence_of_element_located
+[2025-05-07 14:10:30,967 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: get window title
+[2025-05-07 14:10:30,971 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: switch to default window
+[2025-05-07 14:10:30,980 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:10:30,980 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:10:30,990 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: switch to window with handle '902ED652E1E531BF5D8439817F9C5EE8'
+[2025-05-07 14:10:31,003 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: new window handle = '902ED652E1E531BF5D8439817F9C5EE8'
+[2025-05-07 14:10:31,004 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: close window handle '902ED652E1E531BF5D8439817F9C5EE8'
+[2025-05-07 14:10:31,064 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: get currency handle  id
+[2025-05-07 14:10:31,194 - INFO] Browser[a454f7628b1f99c1e1d93a254b28e5de]: quit
+[2025-05-07 14:11:49,211 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: get http://the-internet.herokuapp.com/windows
+[2025-05-07 14:11:50,937 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:11:50,938 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:11:50,948 - INFO] 
+
+    ======================== Open first page ==========================    
+
+
+[2025-05-07 14:11:50,948 - INFO] Button[//a[contains(text(), 'Click Here')]]: wait for element_to_be_clickable
+[2025-05-07 14:11:50,974 - INFO] Button[//a[contains(text(), 'Click Here')]]: click
+[2025-05-07 14:11:51,062 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: get all browser window handles
+[2025-05-07 14:11:51,076 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: switch to window with handle '7CEE352E265479281CB480CFE4FA5AFE'
+[2025-05-07 14:11:51,116 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: new window handle = '7CEE352E265479281CB480CFE4FA5AFE'
+[2025-05-07 14:11:51,117 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: get currency handle  id
+[2025-05-07 14:11:51,119 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: switch to window with handle '7CEE352E265479281CB480CFE4FA5AFE'
+[2025-05-07 14:11:51,149 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: new window handle = '7CEE352E265479281CB480CFE4FA5AFE'
+[2025-05-07 14:11:51,149 - INFO] NewTabHandlersPage[NewTabHandlersPage]: wait for open
+[2025-05-07 14:11:51,149 - INFO] Label[//div//*[contains(text(), 'New Window')]]: wait for presence_of_element_located
+[2025-05-07 14:11:51,199 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: get window title
+[2025-05-07 14:11:51,202 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: switch to default window
+[2025-05-07 14:11:51,211 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:11:51,211 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:11:51,219 - INFO] 
+
+    ======================== Open second page ==========================    
+
+
+[2025-05-07 14:11:51,219 - INFO] Button[//a[contains(text(), 'Click Here')]]: wait for element_to_be_clickable
+[2025-05-07 14:11:51,233 - INFO] Button[//a[contains(text(), 'Click Here')]]: click
+[2025-05-07 14:11:51,296 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: get all browser window handles
+[2025-05-07 14:11:51,309 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: switch to window with handle '4D4DA36573938AB74C582CC00A976E5C'
+[2025-05-07 14:11:51,345 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: new window handle = '4D4DA36573938AB74C582CC00A976E5C'
+[2025-05-07 14:11:51,346 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: get currency handle  id
+[2025-05-07 14:11:51,347 - INFO] NewTabHandlersPage[NewTabHandlersPage]: wait for open
+[2025-05-07 14:11:51,347 - INFO] Label[//div//*[contains(text(), 'New Window')]]: wait for presence_of_element_located
+[2025-05-07 14:11:51,436 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: get window title
+[2025-05-07 14:11:51,441 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: switch to default window
+[2025-05-07 14:11:51,448 - INFO] HandlersPage[HandlersPage]: wait for open
+[2025-05-07 14:11:51,448 - INFO] Label[//*[@id='content']//*[contains(text(), 'Opening a new window')]]: wait for presence_of_element_located
+[2025-05-07 14:11:51,457 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: switch to window with handle '7CEE352E265479281CB480CFE4FA5AFE'
+[2025-05-07 14:11:51,469 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: new window handle = '7CEE352E265479281CB480CFE4FA5AFE'
+[2025-05-07 14:11:51,470 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: close window handle '7CEE352E265479281CB480CFE4FA5AFE'
+[2025-05-07 14:11:51,487 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: get all browser window handles
+[2025-05-07 14:11:51,488 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: switch to window with handle '4D4DA36573938AB74C582CC00A976E5C'
+[2025-05-07 14:11:51,511 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: new window handle = '4D4DA36573938AB74C582CC00A976E5C'
+[2025-05-07 14:11:51,511 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: close window handle '4D4DA36573938AB74C582CC00A976E5C'
+[2025-05-07 14:11:51,574 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: get all browser window handles
+[2025-05-07 14:11:51,578 - INFO] Browser[3a71b0feadf73cafaf8d11c46640e13c]: quit

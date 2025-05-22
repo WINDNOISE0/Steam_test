@@ -5,7 +5,7 @@ from elements.web_element import WebElement
 from logger.logger import Logger
 
 
-class MultyWebElement:
+class MultiWebElement:
     DEFAULT_TIMEOUT = 10
 
     def __init__(
@@ -51,11 +51,3 @@ class MultyWebElement:
             count += 1
         Logger.info(f"{self}: count = {count}")
         return count
-
-    def scroll_into_view(self, count_element):
-        for element in self:
-            if self.index == count_element:
-                break
-
-            Logger.info(f"{self}: scroll element ")
-            self.browser.execute_script("arguments[0].scrollIntoView();", element.get_selenium_element())

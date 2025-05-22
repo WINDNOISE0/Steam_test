@@ -5,7 +5,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 from selenium.webdriver.support import expected_conditions
 from seleniumbase.common.exceptions import TimeoutException, WebDriverException
-from selenium.common.exceptions import TimeoutException as TimeEx
 
 from logger.logger import Logger
 
@@ -74,7 +73,7 @@ class BaseElement:
             self.wait_for_presence()
             Logger.info(f"{self} element is exists")
             return True
-        except (TimeoutException, TimeEx):
+        except TimeoutException:
             Logger.error(f"{self} element not exists")
             return False
 
@@ -156,7 +155,7 @@ class BaseElement:
         Logger.info(f"{self}: move element")
         self.actions.move_to_element(element).perform()
 
-    def get_selenium_element(self):
+    def scroll_to_element(self):
         element = self.wait_for_visible()
-        Logger.info(f"{self}: get selenium element")
-        return element
+        Logger.info(f"{self}: scroll to element ")
+        self.browser.execute_script("arguments[0].scrollIntoView();", element)

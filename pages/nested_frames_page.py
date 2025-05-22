@@ -1,4 +1,3 @@
-from elements.base_element import BaseElement
 from elements.button import Button
 from elements.label import Label
 from elements.web_element import WebElement
