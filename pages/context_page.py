@@ -17,7 +17,3 @@ class ContexPage(BasePage):
 
     def click_ok_alert_button(self):
         self.browser.switch_to_alert().accept()
-
-    @property
-    def actual_alert_text(self):
-        return self.browser.get_alert_text()

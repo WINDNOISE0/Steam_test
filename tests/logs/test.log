@@ -397,3 +397,126 @@ Stacktrace:
 [2025-05-22 15:05:10,873 - INFO] WebElement[sampleHeading]: text = 'This is a sample page'
 [2025-05-22 15:05:10,873 - INFO] Browser[718e9ef1af88fb125782af81f2e702ef]: switch to default frame
 [2025-05-22 15:05:10,878 - INFO] Browser[718e9ef1af88fb125782af81f2e702ef]: quit
+[2025-05-29 14:07:06,630 - INFO] Browser[ad527195f4d37dba36345a9b1bba1365]: get http://the-internet.herokuapp.com/javascript_alerts
+[2025-05-29 14:07:08,533 - INFO] AlertsPage[AlertsPage]: wait for open
+[2025-05-29 14:07:08,533 - INFO] WebElement[//*[@id='content']//*[contains(text(), 'JavaScript Alerts')]]: wait for presence_of_element_located
+[2025-05-29 14:07:08,544 - INFO] Button[//button[@onclick='jsAlert()']]: wait for element_to_be_clickable
+[2025-05-29 14:07:08,627 - INFO] Button[//button[@onclick='jsAlert()']]: click
+[2025-05-29 14:07:08,666 - INFO] Browser[ad527195f4d37dba36345a9b1bba1365]: get alert text
+[2025-05-29 14:07:08,666 - INFO] Browser[ad527195f4d37dba36345a9b1bba1365]: switch to alert
+[2025-05-29 14:07:08,667 - INFO] Browser[ad527195f4d37dba36345a9b1bba1365]: wait alert present
+[2025-05-29 14:07:08,669 - INFO] Browser[ad527195f4d37dba36345a9b1bba1365]: switch to alert
+[2025-05-29 14:07:08,669 - INFO] Browser[ad527195f4d37dba36345a9b1bba1365]: wait alert present
+[2025-05-29 14:07:08,671 - INFO] WebElement[result]: wait for presence_of_element_located
+[2025-05-29 14:07:08,684 - INFO] WebElement[result]: get text
+[2025-05-29 14:07:08,696 - INFO] WebElement[result]: text = 'You successfully clicked an alert'
+[2025-05-29 14:07:08,696 - INFO] WebElement[result]: wait for presence_of_element_located
+[2025-05-29 14:07:08,701 - INFO] WebElement[result]: get text
+[2025-05-29 14:07:08,708 - INFO] WebElement[result]: text = 'You successfully clicked an alert'
+[2025-05-29 14:07:08,845 - INFO] Browser[ad527195f4d37dba36345a9b1bba1365]: quit
+[2025-05-29 14:07:12,206 - INFO] Browser[d59f3493a694dc7dece0ee876a25ec8e]: get http://the-internet.herokuapp.com/javascript_alerts
+[2025-05-29 14:07:14,070 - INFO] AlertsPage[AlertsPage]: wait for open
+[2025-05-29 14:07:14,071 - INFO] WebElement[//*[@id='content']//*[contains(text(), 'JavaScript Alerts')]]: wait for presence_of_element_located
+[2025-05-29 14:07:14,084 - INFO] Button[//button[@onclick='jsConfirm()']]: wait for element_to_be_clickable
+[2025-05-29 14:07:14,110 - INFO] Button[//button[@onclick='jsConfirm()']]: click
+[2025-05-29 14:07:14,152 - INFO] Browser[d59f3493a694dc7dece0ee876a25ec8e]: get alert text
+[2025-05-29 14:07:14,153 - INFO] Browser[d59f3493a694dc7dece0ee876a25ec8e]: switch to alert
+[2025-05-29 14:07:14,153 - INFO] Browser[d59f3493a694dc7dece0ee876a25ec8e]: wait alert present
+[2025-05-29 14:07:14,154 - INFO] Browser[d59f3493a694dc7dece0ee876a25ec8e]: switch to alert
+[2025-05-29 14:07:14,154 - INFO] Browser[d59f3493a694dc7dece0ee876a25ec8e]: wait alert present
+[2025-05-29 14:07:14,158 - INFO] WebElement[result]: wait for presence_of_element_located
+[2025-05-29 14:07:14,176 - INFO] WebElement[result]: get text
+[2025-05-29 14:07:14,189 - INFO] WebElement[result]: text = 'You clicked: Ok'
+[2025-05-29 14:07:14,191 - INFO] Browser[d59f3493a694dc7dece0ee876a25ec8e]: quit
+[2025-05-29 14:07:25,235 - INFO] Browser[4e58e3b7bd38e7b6893392c3fbfa0f4a]: get http://the-internet.herokuapp.com/javascript_alerts
+[2025-05-29 14:07:27,112 - INFO] AlertsPage[AlertsPage]: wait for open
+[2025-05-29 14:07:27,113 - INFO] WebElement[//*[@id='content']//*[contains(text(), 'JavaScript Alerts')]]: wait for presence_of_element_located
+[2025-05-29 14:07:27,128 - INFO] Button[//button[@onclick='jsPrompt()']]: wait for element_to_be_clickable
+[2025-05-29 14:07:27,150 - INFO] Button[//button[@onclick='jsPrompt()']]: click
+[2025-05-29 14:07:27,189 - INFO] Browser[4e58e3b7bd38e7b6893392c3fbfa0f4a]: get alert text
+[2025-05-29 14:07:27,189 - INFO] Browser[4e58e3b7bd38e7b6893392c3fbfa0f4a]: switch to alert
+[2025-05-29 14:07:27,190 - INFO] Browser[4e58e3b7bd38e7b6893392c3fbfa0f4a]: wait alert present
+[2025-05-29 14:07:27,192 - INFO] Browser[4e58e3b7bd38e7b6893392c3fbfa0f4a]: get alert text
+[2025-05-29 14:07:27,192 - INFO] Browser[4e58e3b7bd38e7b6893392c3fbfa0f4a]: switch to alert
+[2025-05-29 14:07:27,192 - INFO] Browser[4e58e3b7bd38e7b6893392c3fbfa0f4a]: wait alert present
+[2025-05-29 14:07:27,339 - INFO] Browser[4e58e3b7bd38e7b6893392c3fbfa0f4a]: quit
+[2025-05-29 14:08:00,751 - INFO] Browser[803f64fcfadc8468c332f012a36d2128]: get http://the-internet.herokuapp.com/javascript_alerts
+[2025-05-29 14:08:02,994 - INFO] AlertsPage[AlertsPage]: wait for open
+[2025-05-29 14:08:02,995 - INFO] WebElement[//*[@id='content']//*[contains(text(), 'JavaScript Alerts')]]: wait for presence_of_element_located
+[2025-05-29 14:08:03,006 - INFO] Button[//button[@onclick='jsPrompt()']]: wait for element_to_be_clickable
+[2025-05-29 14:08:03,036 - INFO] Button[//button[@onclick='jsPrompt()']]: click
+[2025-05-29 14:08:03,077 - INFO] Browser[803f64fcfadc8468c332f012a36d2128]: get alert text
+[2025-05-29 14:08:03,077 - INFO] Browser[803f64fcfadc8468c332f012a36d2128]: switch to alert
+[2025-05-29 14:08:03,077 - INFO] Browser[803f64fcfadc8468c332f012a36d2128]: wait alert present
+[2025-05-29 14:08:03,079 - INFO] Browser[803f64fcfadc8468c332f012a36d2128]: get alert text
+[2025-05-29 14:08:03,080 - INFO] Browser[803f64fcfadc8468c332f012a36d2128]: switch to alert
+[2025-05-29 14:08:03,080 - INFO] Browser[803f64fcfadc8468c332f012a36d2128]: wait alert present
+[2025-05-29 14:08:03,214 - INFO] Browser[803f64fcfadc8468c332f012a36d2128]: quit
+[2025-05-29 14:11:08,149 - INFO] Browser[a5c012e532b05edbc09b6772365ebd2c]: get http://the-internet.herokuapp.com/javascript_alerts
+[2025-05-29 14:11:10,142 - INFO] AlertsPage[AlertsPage]: wait for open
+[2025-05-29 14:11:10,142 - INFO] WebElement[//*[@id='content']//*[contains(text(), 'JavaScript Alerts')]]: wait for presence_of_element_located
+[2025-05-29 14:11:10,156 - INFO] Button[//button[@onclick='jsPrompt()']]: wait for element_to_be_clickable
+[2025-05-29 14:11:10,182 - INFO] Button[//button[@onclick='jsPrompt()']]: click
+[2025-05-29 14:11:10,244 - INFO] Browser[a5c012e532b05edbc09b6772365ebd2c]: get alert text
+[2025-05-29 14:11:10,244 - INFO] Browser[a5c012e532b05edbc09b6772365ebd2c]: switch to alert
+[2025-05-29 14:11:10,244 - INFO] Browser[a5c012e532b05edbc09b6772365ebd2c]: wait alert present
+[2025-05-29 14:11:10,252 - INFO] Browser[a5c012e532b05edbc09b6772365ebd2c]: send 'read' to alert
+[2025-05-29 14:11:10,253 - INFO] Browser[a5c012e532b05edbc09b6772365ebd2c]: switch to alert
+[2025-05-29 14:11:10,253 - INFO] Browser[a5c012e532b05edbc09b6772365ebd2c]: wait alert present
+[2025-05-29 14:11:10,257 - INFO] Browser[a5c012e532b05edbc09b6772365ebd2c]: switch to alert
+[2025-05-29 14:11:10,258 - INFO] Browser[a5c012e532b05edbc09b6772365ebd2c]: wait alert present
+[2025-05-29 14:11:10,263 - INFO] WebElement[result]: wait for presence_of_element_located
+[2025-05-29 14:11:10,276 - INFO] WebElement[result]: get text
+[2025-05-29 14:11:10,288 - INFO] WebElement[result]: text = 'You entered: read'
+[2025-05-29 14:11:10,290 - INFO] Browser[a5c012e532b05edbc09b6772365ebd2c]: quit
+[2025-05-29 14:16:27,961 - INFO] Browser[0ff14aada848c6c9eb13a7d9b9e59964]: get http://the-internet.herokuapp.com/javascript_alerts
+[2025-05-29 14:16:29,972 - INFO] AlertsPage[AlertsPage]: wait for open
+[2025-05-29 14:16:29,972 - INFO] WebElement[//*[@id='content']//*[contains(text(), 'JavaScript Alerts')]]: wait for presence_of_element_located
+[2025-05-29 14:16:29,988 - INFO] Button[//button[@onclick='jsAlert()']]: wait for presence_of_element_located
+[2025-05-29 14:16:30,001 - INFO] Button[//button[@onclick='jsAlert()']]: js click
+[2025-05-29 14:16:30,002 - INFO] Browser[0ff14aada848c6c9eb13a7d9b9e59964]: execute script = 'arguments[0].click();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="0ff14aada848c6c9eb13a7d9b9e59964", element="f.B49B27BBF4D305F18A894838545ED0C2.d.6C6CE7C2EC11DF0B76DBDEA213798397.e.7")>,)'
+[2025-05-29 14:16:30,008 - INFO] Browser[0ff14aada848c6c9eb13a7d9b9e59964]: get alert text
+[2025-05-29 14:16:30,008 - INFO] Browser[0ff14aada848c6c9eb13a7d9b9e59964]: switch to alert
+[2025-05-29 14:16:30,008 - INFO] Browser[0ff14aada848c6c9eb13a7d9b9e59964]: wait alert present
+[2025-05-29 14:16:30,010 - INFO] Browser[0ff14aada848c6c9eb13a7d9b9e59964]: switch to alert
+[2025-05-29 14:16:30,010 - INFO] Browser[0ff14aada848c6c9eb13a7d9b9e59964]: wait alert present
+[2025-05-29 14:16:30,012 - INFO] WebElement[result]: wait for presence_of_element_located
+[2025-05-29 14:16:30,024 - INFO] WebElement[result]: get text
+[2025-05-29 14:16:30,040 - INFO] WebElement[result]: text = 'You successfully clicked an alert'
+[2025-05-29 14:16:30,041 - INFO] WebElement[result]: wait for presence_of_element_located
+[2025-05-29 14:16:30,047 - INFO] WebElement[result]: get text
+[2025-05-29 14:16:30,053 - INFO] WebElement[result]: text = 'You successfully clicked an alert'
+[2025-05-29 14:16:30,170 - INFO] Browser[0ff14aada848c6c9eb13a7d9b9e59964]: quit
+[2025-05-29 14:16:33,486 - INFO] Browser[f8f775f769b4f2866494039cfee38d2c]: get http://the-internet.herokuapp.com/javascript_alerts
+[2025-05-29 14:16:36,154 - INFO] AlertsPage[AlertsPage]: wait for open
+[2025-05-29 14:16:36,154 - INFO] WebElement[//*[@id='content']//*[contains(text(), 'JavaScript Alerts')]]: wait for presence_of_element_located
+[2025-05-29 14:16:36,165 - INFO] Button[//button[@onclick='jsConfirm()']]: wait for presence_of_element_located
+[2025-05-29 14:16:36,178 - INFO] Button[//button[@onclick='jsConfirm()']]: js click
+[2025-05-29 14:16:36,179 - INFO] Browser[f8f775f769b4f2866494039cfee38d2c]: execute script = 'arguments[0].click();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="f8f775f769b4f2866494039cfee38d2c", element="f.B3A7C5833406AA949A5F5549FE31063A.d.5C2A93AED2CEC90954DD7C608A8AC457.e.4")>,)'
+[2025-05-29 14:16:36,189 - INFO] Browser[f8f775f769b4f2866494039cfee38d2c]: get alert text
+[2025-05-29 14:16:36,190 - INFO] Browser[f8f775f769b4f2866494039cfee38d2c]: switch to alert
+[2025-05-29 14:16:36,190 - INFO] Browser[f8f775f769b4f2866494039cfee38d2c]: wait alert present
+[2025-05-29 14:16:36,192 - INFO] Browser[f8f775f769b4f2866494039cfee38d2c]: switch to alert
+[2025-05-29 14:16:36,192 - INFO] Browser[f8f775f769b4f2866494039cfee38d2c]: wait alert present
+[2025-05-29 14:16:36,197 - INFO] WebElement[result]: wait for presence_of_element_located
+[2025-05-29 14:16:36,211 - INFO] WebElement[result]: get text
+[2025-05-29 14:16:36,223 - INFO] WebElement[result]: text = 'You clicked: Ok'
+[2025-05-29 14:16:36,224 - INFO] Browser[f8f775f769b4f2866494039cfee38d2c]: quit
+[2025-05-29 14:16:42,839 - INFO] Browser[a7edc820a7ab4229149717cd6e9f0f1b]: get http://the-internet.herokuapp.com/javascript_alerts
+[2025-05-29 14:16:44,882 - INFO] AlertsPage[AlertsPage]: wait for open
+[2025-05-29 14:16:44,882 - INFO] WebElement[//*[@id='content']//*[contains(text(), 'JavaScript Alerts')]]: wait for presence_of_element_located
+[2025-05-29 14:16:44,892 - INFO] Button[//button[@onclick='jsPrompt()']]: wait for presence_of_element_located
+[2025-05-29 14:16:44,904 - INFO] Button[//button[@onclick='jsPrompt()']]: js click
+[2025-05-29 14:16:44,905 - INFO] Browser[a7edc820a7ab4229149717cd6e9f0f1b]: execute script = 'arguments[0].click();' with args = '(<selenium.webdriver.remote.webelement.WebElement (session="a7edc820a7ab4229149717cd6e9f0f1b", element="f.6ADB972961D8350D4DAAC5A445943D58.d.9648772DC6DB60364BFC0D2B6EBBDE7B.e.4")>,)'
+[2025-05-29 14:16:44,917 - INFO] Browser[a7edc820a7ab4229149717cd6e9f0f1b]: get alert text
+[2025-05-29 14:16:44,917 - INFO] Browser[a7edc820a7ab4229149717cd6e9f0f1b]: switch to alert
+[2025-05-29 14:16:44,917 - INFO] Browser[a7edc820a7ab4229149717cd6e9f0f1b]: wait alert present
+[2025-05-29 14:16:44,920 - INFO] Browser[a7edc820a7ab4229149717cd6e9f0f1b]: send 'play' to alert
+[2025-05-29 14:16:44,920 - INFO] Browser[a7edc820a7ab4229149717cd6e9f0f1b]: switch to alert
+[2025-05-29 14:16:44,920 - INFO] Browser[a7edc820a7ab4229149717cd6e9f0f1b]: wait alert present
+[2025-05-29 14:16:44,922 - INFO] Browser[a7edc820a7ab4229149717cd6e9f0f1b]: switch to alert
+[2025-05-29 14:16:44,922 - INFO] Browser[a7edc820a7ab4229149717cd6e9f0f1b]: wait alert present
+[2025-05-29 14:16:44,926 - INFO] WebElement[result]: wait for presence_of_element_located
+[2025-05-29 14:16:44,937 - INFO] WebElement[result]: get text
+[2025-05-29 14:16:44,948 - INFO] WebElement[result]: text = 'You entered: play'
+[2025-05-29 14:16:44,950 - INFO] Browser[a7edc820a7ab4229149717cd6e9f0f1b]: quit

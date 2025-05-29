@@ -29,14 +29,14 @@ class FramePage(BasePage):
         self.nested_frames_button.js_click()
 
     @property
-    def actual_big_frame_text(self):
+    def big_frame_text(self):
         self.browser.switch_to_frame(self.big_frame)
         frame_text = self.frame_text.get_text()
         self.browser.switch_to_default_frame()
         return frame_text
 
     @property
-    def actual_small_frame_text(self):
+    def small_frame_text(self):
         self.browser.switch_to_frame(self.small_frame)
         frame_text = self.frame_text.get_text()
         self.browser.switch_to_default_frame()

@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34dc6ffc-8e16-48be-ac9b-a4c97fba067d" name="Changes" comment="Make Docker" />
+    <list default="true" id="34dc6ffc-8e16-48be-ac9b-a4c97fba067d" name="Changes" comment="Make Docker">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/base_element.py" beforeDir="false" afterPath="$PROJECT_DIR$/elements/base_element.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expected_results/expected_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/expected_results/expected_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/randoms.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/randoms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/sort_filter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/alerts_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/alerts_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/context_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/context_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/frame_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/frame_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/h_slider_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/h_slider_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/nested_frames_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/nested_frames_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/upload_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/upload_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script_file_load.au3" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script_file_load.au3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/test_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logs/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_elements.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,11 +82,13 @@
     "Python tests.pytest for test_authorization.TestAuthorization.test_simple_authorization.executor": "Run",
     "Python tests.pytest for test_elements.TestElements.executor": "Run",
     "Python tests.pytest for test_elements.TestElements.test_basic_auth.executor": "Run",
+    "Python tests.pytest for test_elements.TestElements.test_click_alert_prompt.executor": "Run",
     "Python tests.pytest for test_elements.TestElements.test_click_alerts.executor": "Run",
     "Python tests.pytest for test_elements.TestElements.test_context_menu.executor": "Run",
     "Python tests.pytest for test_elements.TestElements.test_hover_random_user.executor": "Run",
     "Python tests.pytest for test_elements.TestElements.test_hover_random_value.executor": "Run",
     "Python tests.pytest for test_elements.TestElements.test_js_click_alerts.executor": "Run",
+    "Python tests.pytest for test_elements.TestElements.test_js_click_prompt_alerts.executor": "Run",
     "Python tests.pytest for test_elements.TestElements.test_load_file_drag_drop_action.executor": "Run",
     "Python tests.pytest for test_elements.TestElements.test_load_file_from_dialog.executor": "Run",
     "Python tests.pytest for test_elements.TestElements.test_load_file_from_select.executor": "Run",
@@ -96,8 +120,8 @@
       <recent name="C:\Users\1\Desktop\QA\Auto\UIf\elements" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_elements.TestElements.test_switch_frame">
-    <configuration name="pytest for test_elements.TestElements" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for test_elements.TestElements.test_js_click_prompt_alerts">
+    <configuration name="pytest for test_elements.TestElements.test_click_alert_prompt" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Steam_test" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,11 +134,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_elements.TestElements&quot;" />
+      <option name="_new_target" value="&quot;test_elements.TestElements.test_click_alert_prompt&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_elements.TestElements.test_scroll_down_to_age" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_elements.TestElements.test_click_alerts" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Steam_test" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,11 +151,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_elements.TestElements.test_scroll_down_to_age&quot;" />
+      <option name="_new_target" value="&quot;test_elements.TestElements.test_click_alerts&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_elements.TestElements.test_set_random_slider_value" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_elements.TestElements.test_js_click_alerts" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Steam_test" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,7 +168,24 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_elements.TestElements.test_set_random_slider_value&quot;" />
+      <option name="_new_target" value="&quot;test_elements.TestElements.test_js_click_alerts&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_elements.TestElements.test_js_click_prompt_alerts" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Steam_test" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_elements.TestElements.test_js_click_prompt_alerts&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -165,30 +206,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_elements.TestElements.test_switch_handlers" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Steam_test" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_elements.TestElements.test_switch_handlers&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_elements.TestElements.test_js_click_prompt_alerts" />
+        <item itemvalue="Python tests.pytest for test_elements.TestElements.test_js_click_alerts" />
+        <item itemvalue="Python tests.pytest for test_elements.TestElements.test_click_alert_prompt" />
+        <item itemvalue="Python tests.pytest for test_elements.TestElements.test_click_alerts" />
         <item itemvalue="Python tests.pytest for test_elements.TestElements.test_switch_frame" />
-        <item itemvalue="Python tests.pytest for test_elements.TestElements.test_switch_handlers" />
-        <item itemvalue="Python tests.pytest for test_elements.TestElements" />
-        <item itemvalue="Python tests.pytest for test_elements.TestElements.test_set_random_slider_value" />
-        <item itemvalue="Python tests.pytest for test_elements.TestElements.test_scroll_down_to_age" />
       </list>
     </recent_temporary>
   </component>
@@ -408,7 +432,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747921203953</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Make Docker">
+      <option name="closed" value="true" />
+      <created>1747921298773</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1747921298773</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

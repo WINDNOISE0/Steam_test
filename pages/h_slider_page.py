@@ -22,7 +22,7 @@ class HSliderPage(BasePage):
         self.slider.set_slider_value(value)
 
     @property
-    def actual_hover_state_vale(self):
+    def hover_state_vale(self):
         return float(self.hover_state.get_text())
 
     @property

@@ -84,7 +84,7 @@ class BaseElement:
             Logger.info(f"{self} element is visible")
             return True
         except TimeoutException:
-            Logger.error(f"{self} element not visible")
+            Logger.info(f"{self} element not visible")
             return False
 
     def click(self) -> None:

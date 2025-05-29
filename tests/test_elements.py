@@ -1,14 +1,16 @@
 import os
 from random import randint
 
-import faker
 import pytest
+from faker import Faker
 
-from expected_results.expected_results import AlertPageExpectedRes, ContextPageExpectedRes, HoversPageExpectedRes, \
+from expected_results.expected_results import AlertPageExpectedRes, ContextPageExpectedRes, \
     NewTabHandlersPageExpectedRes, NestedFramesPageExpectedRes, UploadPageExpectedRes
-from helpers import UrlUtils, RandomUtils, FileUtils
 from helpers.enpoints_urn import URN
+from helpers.files import FileUtils
 from helpers.js_button import JsButton
+from helpers.randoms import RandomUtils
+from helpers.urls import UrlUtils
 from logger.logger import Logger
 from pages.dynamic_c_page import DynamicCPage
 from pages.frame_page import FramePage
@@ -27,15 +29,13 @@ from test_config import TestConfig
 class TestElements:
     AGE = 27
     FIND_TIMEOUT = 10
+    faker = Faker()
 
-    @pytest.mark.parametrize("username, password", [
-        (TestConfig.USERNAME, TestConfig.PASSWORD)
-    ])
-    def test_basic_auth(self, browser, username, password):
+    def test_basic_auth(self, browser, username=TestConfig.USERNAME, password=TestConfig.PASSWORD):
         authorize_page = AuthorizePage(browser)
 
         browser.get(UrlUtils.create_url(URN.AUTHORIZE))
-        authorize_link = UrlUtils.create_basic_auth_link(URN.AUTHORIZE, username=username, password=password)
+        authorize_link = UrlUtils.create_basic_auth_link(URN.AUTHORIZE, username, password)
 
         browser.get(authorize_link)
 
@@ -44,54 +44,87 @@ class TestElements:
     @pytest.mark.parametrize("button_name", [
         (JsButton.ALERT),
         (JsButton.CONFIRM),
-        (JsButton.PROMPT),
     ])
     def test_click_alerts(self, browser, button_name):
-        test_word = None
-        if button_name == JsButton.PROMPT:
-            test_word = faker.Faker().word()
-
         alerts_page = AlertsPage(browser)
         browser.get(UrlUtils.create_url(URN.JS_ALERTS))
         assert alerts_page.is_loaded(), "No open alerts page"
 
         alerts_page.click_button(button_name)
 
-        expected = AlertPageExpectedRes(button_name, test_word)
+        expected_r = AlertPageExpectedRes()
+        expected = expected_r.buttons[button_name]
 
-        assert expected.data.alert_expected_text == alerts_page.actual_alert_text, \
-            f"Expected alert text: '{expected.data.alert_expected_text}' not matched actual text: '{alerts_page.actual_alert_text}'"
+        assert expected.alert_expected_text == alerts_page.alert_text, \
+            f"Expected alert text: '{expected.alert_expected_text}' not matched actual text: '{alerts_page.alert_text}'"
 
-        alerts_page.click_ok_alert_button(test_word)
+        alerts_page.click_ok_alert_button()
 
-        assert expected.data.result_expected_text == alerts_page.actual_result_text, \
-            f"Expected alert text: '{expected.data.result_expected_text}' not matched actual text: '{alerts_page.actual_result_text}'"
+        assert expected.result_expected_text == alerts_page.result_text, \
+            f"Expected alert text: '{expected.result_expected_text}' not matched actual text: '{alerts_page.result_text}'"
+
+    def test_click_alert_prompt(self, browser):
+        faker_word = self.faker.word()
+
+        alert_expected_text = "I am a JS prompt"
+        result_expected_text = f"You entered: {faker_word}"
+
+        alerts_page = AlertsPage(browser)
+
+        browser.get(UrlUtils.create_url(URN.JS_ALERTS))
+        assert alerts_page.is_loaded(), "No open alerts page"
+
+        alerts_page.click_prompt_button()
+
+        assert alert_expected_text == alerts_page.alert_text, \
+            f"Expected alert text: '{alert_expected_text}' not matched actual text: '{alerts_page.alert_text}'"
+
+        alerts_page.click_ok_alert_prompt_button(faker_word)
+
+        assert result_expected_text == alerts_page.result_text, \
+            f"Expected alert text: '{result_expected_text}' not matched actual text: '{alerts_page.result_text}'"
 
     @pytest.mark.parametrize("button_name", [
         (JsButton.ALERT),
-        (JsButton.CONFIRM),
-        (JsButton.PROMPT),
+        (JsButton.CONFIRM)
     ])
     def test_js_click_alerts(self, browser, button_name):
-        test_word = None
-        if button_name == JsButton.PROMPT:
-            test_word = faker.Faker().word()
-
         alerts_page = AlertsPage(browser)
         browser.get(UrlUtils.create_url(URN.JS_ALERTS))
         assert alerts_page.is_loaded(), "No open alerts page"
 
         alerts_page.js_click_button(button_name)
 
-        expected = AlertPageExpectedRes(button_name, test_word)
+        expected_r = AlertPageExpectedRes()
+        expected = expected_r.buttons[button_name]
 
-        assert expected.data.alert_expected_text == alerts_page.actual_alert_text, \
-            f"Expected alert text: '{expected.data.alert_expected_text}' not matched actual text: '{alerts_page.actual_alert_text}'"
+        assert expected.alert_expected_text == alerts_page.alert_text, \
+            f"Expected alert text: '{expected.alert_expected_text}' not matched actual text: '{alerts_page.alert_text}'"
 
-        alerts_page.js_click_ok_alert_button(test_word)
+        alerts_page.js_click_ok_alert_button()
 
-        assert expected.data.result_expected_text == alerts_page.actual_result_text, \
-            f"Expected alert text: '{expected.data.result_expected_text}' not matched actual text: '{alerts_page.actual_result_text}'"
+        assert expected.result_expected_text == alerts_page.result_text, \
+            f"Expected alert text: '{expected.result_expected_text}' not matched actual text: '{alerts_page.result_text}'"
+
+    def test_js_click_prompt_alerts(self, browser):
+        faker_word = self.faker.word()
+
+        alert_expected_text = "I am a JS prompt"
+        result_expected_text = f"You entered: {faker_word}"
+
+        alerts_page = AlertsPage(browser)
+        browser.get(UrlUtils.create_url(URN.JS_ALERTS))
+        assert alerts_page.is_loaded(), "No open alerts page"
+
+        alerts_page.js_click_prompt_button()
+
+        assert alert_expected_text == alerts_page.alert_text, \
+            f"Expected alert text: '{alert_expected_text}' not matched actual text: '{alerts_page.alert_text}'"
+
+        alerts_page.js_click_ok_alert_prompt_button(faker_word)
+
+        assert result_expected_text == alerts_page.result_text, \
+            f"Expected alert text: '{result_expected_text}' not matched actual text: '{alerts_page.result_text}'"
 
     def test_select_context_menu(self, browser):
         context_page = ContexPage(browser)
@@ -99,10 +132,11 @@ class TestElements:
         assert context_page.is_loaded(), "No open context page"
 
         expected = ContextPageExpectedRes()
+        actual_alert_text = self.browser.get_alert_text()
 
         context_page.right_hot_spot_click()
-        assert context_page.actual_alert_text == expected.alert_text, \
-            f"Expected alert text: '{context_page.actual_alert_text}' not matched actual text: '{expected.alert_text}'"
+        assert expected.alert_text == actual_alert_text, \
+            f"Expected alert text: '{expected.alert_text}' not matched actual text: '{actual_alert_text}'"
 
         context_page.click_ok_alert_button()
         assert browser.is_alert_closed(), "Alert no close"
@@ -117,8 +151,8 @@ class TestElements:
                                                                 h_slider_page.hover_step_value)
 
         h_slider_page.set_hover_value(expected_value)
-        assert expected_value == h_slider_page.actual_hover_state_vale, \
-            f"Expected hover state: {expected_value} not matched actual value: {h_slider_page.actual_hover_state_vale}"
+        assert expected_value == h_slider_page.hover_state_vale, \
+            f"Expected hover state: {expected_value} not matched actual value: {h_slider_page.hover_state_vale}"
 
     def test_hover_random_user(self, browser):
         hovers_page = HoversPage(browser)
@@ -133,9 +167,9 @@ class TestElements:
 
         hovers_page.click_view_profile(expected_user_number)
         """Здесь при открытии страницы ошибка, поэтому можно только линку проверить"""
-        expected = HoversPageExpectedRes(expected_user_number)
-        assert expected.user_link == hovers_page.actual_user_link, \
-            f"Expected user link: {expected.user_link} not matched actual link: {hovers_page.actual_user_link}"
+        expected_user_link = f"{UrlUtils.get_protocol(secure=True)}{TestConfig.HOST}/users/{str(expected_user_number)}"
+        assert expected_user_link == hovers_page.actual_user_link, \
+            f"Expected user link: {expected_user_link} not matched actual link: {hovers_page.actual_user_link}"
 
     def test_switch_handlers(self, browser):
         main_handlers_page = HandlersPage(browser)
@@ -190,20 +224,20 @@ class TestElements:
         expected = NestedFramesPageExpectedRes()
 
         nested_frames_page.switch_to_parent_frame()
-        assert expected.parent_frame_text == nested_frames_page.actual_parent_text, \
-            f"Expected text:'{expected.parent_frame_text}' not match actual '{nested_frames_page.actual_parent_text}'"
+        assert expected.parent_frame_text == nested_frames_page.parent_text, \
+            f"Expected text:'{expected.parent_frame_text}' not match actual '{nested_frames_page.parent_text}'"
 
         nested_frames_page.switch_to_child_frame()
-        assert expected.child_frame_text == nested_frames_page.actual_child_text, \
-            f"Expected text:'{expected.child_frame_text}' not match actual '{nested_frames_page.actual_child_text}'"
+        assert expected.child_frame_text == nested_frames_page.child_text, \
+            f"Expected text:'{expected.child_frame_text}' not match actual '{nested_frames_page.child_text}'"
 
         browser.switch_to_default_frame()
 
         nested_frames_page.select_menu_item_frame()
         assert frames_page.is_loaded(), "No open frames page"
 
-        assert frames_page.actual_big_frame_text == frames_page.actual_small_frame_text, \
-            f"Text big frame: '{frames_page.actual_big_frame_text}' not match small frame:'{frames_page.actual_small_frame_text}'"
+        assert frames_page.big_frame_text == frames_page.small_frame_text, \
+            f"Text big frame: '{frames_page.big_frame_text}' not match small frame:'{frames_page.small_frame_text}'"
 
     def test_match_img_after_refresh(self, browser):
         dynamic_c_page = DynamicCPage(browser)
@@ -220,8 +254,8 @@ class TestElements:
         assert scroll_page.is_loaded(), "No open scroll page"
 
         scroll_page.scroll_to_tab_count_age(self.AGE)
-        assert self.AGE == scroll_page.count_tab, \
-            f"Expected tab: {self.AGE}, but got: {scroll_page.count_tab}"
+        assert self.AGE == scroll_page.get_count_tag(), \
+            f"Expected tab: {self.AGE}, but got: {scroll_page.get_count_tag()}"
 
     def test_load_file_from_select(self, browser):
         upload_page = UploadPage(browser)
@@ -232,8 +266,8 @@ class TestElements:
         expected_file_name = os.path.basename(random_file_path)
 
         upload_page.upload_file_from_select(random_file_path)
-        assert expected_file_name == upload_page.actual_file_name, \
-            f"Expected file name: {expected_file_name} not match {upload_page.actual_file_name}"
+        assert expected_file_name == upload_page.file_name, \
+            f"Expected file name: {expected_file_name} not match {upload_page.file_name}"
 
     @pytest.mark.skip(reason="Disable for Dockerfile")
     def test_load_file_from_system_window(self, browser):
@@ -246,8 +280,8 @@ class TestElements:
         expected = UploadPageExpectedRes()
 
         upload_page.upload_file_autoit_click(random_file_path, aut2exe_path)
-        assert expected.check_mark == upload_page.actual_check_mark_text, \
-            f"Expected mark text :{expected.check_mark} not match {upload_page.actual_check_mark_text}"
+        assert expected.check_mark == upload_page.check_mark_text, \
+            f"Expected mark text :{expected.check_mark} not match {upload_page.check_mark_text}"
 
     @pytest.mark.skip(reason="Disable for Dockerfile")
     def test_upload_file_hide_input(self, browser):
@@ -259,5 +293,5 @@ class TestElements:
         expected = UploadPageExpectedRes()
 
         upload_page.upload_file_hide_input(random_file_path)
-        assert expected.check_mark == upload_page.actual_check_mark_text, \
-            f"Expected mark text :{expected.check_mark} not match {upload_page.actual_check_mark_text}"
+        assert expected.check_mark == upload_page.check_mark_text, \
+            f"Expected mark text :{expected.check_mark} not match {upload_page.check_mark_text}"

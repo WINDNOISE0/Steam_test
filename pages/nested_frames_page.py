@@ -35,9 +35,9 @@ class NestedFramesPage(BasePage):
         self.frames_button.click()
 
     @property
-    def actual_parent_text(self):
+    def parent_text(self):
         return self.parent_frame_body.get_text()
 
     @property
-    def actual_child_text(self):
+    def child_text(self):
         return self.child_iframe_body.get_text()

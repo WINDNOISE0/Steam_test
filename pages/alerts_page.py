@@ -27,27 +27,33 @@ class AlertsPage(BasePage):
     def click_button(self, button_name: JsButton):
         self.buttons_elements[button_name].click()
 
+    def click_prompt_button(self):
+        self.buttons_elements[JsButton.PROMPT].click()
 
     def js_click_button(self, button_name: JsButton):
         self.buttons_elements[button_name].js_click()
 
+    def js_click_prompt_button(self):
+        self.buttons_elements[JsButton.PROMPT].js_click()
 
-    def click_ok_alert_button(self, test_word):
-        if test_word:
-            self.browser.send_keys_alert(test_word)
-
+    def click_ok_alert_button(self):
         self.browser.switch_to_alert().accept()
 
-    def js_click_ok_alert_button(self, test_word):
-        if test_word:
-            self.browser.send_keys_alert(test_word)
+    def click_ok_alert_prompt_button(self, test_word):
+        self.browser.send_keys_alert(test_word)
+        self.browser.switch_to_alert().accept()
 
+    def js_click_ok_alert_button(self):
+        self.browser.switch_to_alert().accept()
+
+    def js_click_ok_alert_prompt_button(self, test_word):
+        self.browser.send_keys_alert(test_word)
         self.browser.switch_to_alert().accept()
 
     @property
-    def actual_result_text(self):
+    def result_text(self):
         return self.result_label.get_text()
 
     @property
-    def actual_alert_text(self):
+    def alert_text(self):
         return self.browser.get_alert_text()

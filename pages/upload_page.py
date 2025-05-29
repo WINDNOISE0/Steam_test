@@ -1,7 +1,7 @@
 from elements.button import Button
 from elements.input import Input
 from elements.label import Label
-from helpers import AutoItUtils
+from helpers.autoit import AutoItUtils
 from pages.base_page import BasePage
 
 
@@ -41,9 +41,9 @@ class UploadPage(BasePage):
         self.drag_drop_input.send_keys(file_path, hide_element=True)
 
     @property
-    def actual_file_name(self):
+    def file_name(self):
         return self.load_file_name.get_text()
 
     @property
-    def actual_check_mark_text(self):
+    def check_mark_text(self):
         return self.check_mark.get_text()

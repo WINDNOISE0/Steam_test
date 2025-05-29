@@ -20,6 +20,7 @@ logs/
 *.pid
 *.seed
 *.bak
+scripts/
 
 # 🔹 Игнорируем файлы настроек PyCharm
 .idea/

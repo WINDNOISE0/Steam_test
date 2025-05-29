@@ -1,17 +1,15 @@
 FROM python:3.11-slim
 
-# Установка зависимостей
+WORKDIR /tests
+
 RUN apt-get update && apt-get install -y \
     curl unzip chromium-driver chromium
 
-# Установка selenium и seleniumbase
 RUN pip install --upgrade pip
-RUN pip install selenium seleniumbase
 
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
-
-WORKDIR /tests
+COPY requirements.txt .
 COPY . .
 
-CMD ["pytest"]
+RUN pip install -r requirements.txt
+
+ENTRYPOINT ["pytest", "-v", "--tb=short", "--color=yes", "--durations=5"]

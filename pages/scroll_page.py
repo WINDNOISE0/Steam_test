@@ -32,7 +32,3 @@ class ScrollPage(BasePage):
                 break
 
             element.scroll_to_element()
-
-    @property
-    def count_tab(self):
-        return self.get_count_tag()

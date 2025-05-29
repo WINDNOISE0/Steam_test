@@ -1,9 +1,9 @@
 import pytest
 from dotenv import load_dotenv
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
+# from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
-# from webdriver_manager.chrome import ChromeDriverManager  # НЕ нужно, если драйвер уже есть в образе
+# from webdriver_manager.chrome import ChromeDriverManager # НЕ нужно, если драйвер уже есть в образе
 
 from browser.browser import Browser
 
